@@ -1,3 +1,5 @@
 :root {
-  
+  --font: 'Athiti','Montserrat','Open Sans Condensed',sans-serif;
+  --primary-color: #333;
+  --primary-bg-color: #fff;
 }
