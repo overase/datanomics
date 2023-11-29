@@ -1,0 +1,53 @@
+.footer {
+  background-color: var(--header-bg-color);
+}
+
+.footer_group {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 2em;
+  gap: 4em;
+}
+
+.about {
+  color: var(--white-color);
+  line-height: 1.8;
+  font-size: 1.8em;
+}
+
+.mb_2 {
+  margin-bottom: 0.5em;
+}
+
+.white_heading {
+  color: var(--white-color);
+}
+
+.quick_links {
+  
+}
+
+.quick_links__item {
+}
+
+.quick_links__link {
+  display: block;
+  color: var(--white-color);
+  padding-block: 0.8em;
+  font-size: 1.8em;
+}
+
+.booking p {
+  line-height: 1.8;
+}
+
+.contact p {
+  line-height: 1.8;
+}
+
+@media screen and (min-width: 991px) {
+  .footer_group {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
