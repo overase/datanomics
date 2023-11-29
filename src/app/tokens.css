@@ -1,5 +1,9 @@
 :root {
-  --font: 'Athiti','Montserrat','Open Sans Condensed',sans-serif;
+  --font: var(--font-poppins);
+  --default-font-weight: 400;
+  --logo-font-color: #fff;
+  --white-color: #fff;
   --primary-color: #333;
   --primary-bg-color: #fff;
+  --header-bg-color: #17202A;
 }
