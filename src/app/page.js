@@ -1,9 +1,9 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import { WhyUs } from './components/WhyUs/WhyUs';
 
 export default function Home() {
   return (
     <main>
+      <WhyUs />
     </main>
-  )
+  );
 }

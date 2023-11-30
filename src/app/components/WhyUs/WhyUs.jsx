@@ -1,0 +1,48 @@
+import style from "./WhyUs.module.css";
+import { PiCameraPlusFill, PiCameraPlusLight } from "react-icons/pi";
+import { IoRestaurantOutline, IoRestaurant } from "react-icons/io5";
+import { BsLightbulbFill, BsLightbulb } from "react-icons/bs";
+
+const WhyUs = () => {
+  return (
+    <div className="container">
+      <div className={`${style.why_us}`}>
+        <h1 className={`h1 mb_4`}>WHY US</h1>
+        <div className="flex-col flex-md-row gap-4 justify-space-between">
+          <div className={`col flex-col align-center`}>
+            <div className={style.icon_container}>
+              <PiCameraPlusLight size={30} className={style.light_icon} />
+              <PiCameraPlusFill size={30}  className={style.fill_icon} />
+            </div>
+            <h3 className="h3 mb_2">Security</h3>
+            <p className={style.description}>
+              All our hotels and guest houses are located very close to the security agencies
+            </p>
+          </div>
+          <div className={`col flex-col align-center`}>
+            <div className={style.icon_container}>
+              <IoRestaurantOutline size={30} className={style.light_icon} />
+              <IoRestaurant size={30}  className={style.fill_icon} />
+            </div>
+            <h3 className="h3 mb_2">Restaurant</h3>
+            <p className={style.description}>
+              Our restaurant serves African and continental dishes, in a clean and relaxing atmosphere.
+            </p>
+          </div>
+          <div className={`col flex-col align-center`}>
+            <div className={style.icon_container}>
+              <BsLightbulb size={30} className={style.light_icon} />
+              <BsLightbulbFill size={30} className={style.fill_icon} />
+            </div>
+            <h3 className="h3 mb_2">Electricity</h3>
+            <p className={style.description}>
+              We are equiped with spohisticated generating set to continually make power available to our guest
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export { WhyUs };
