@@ -1,7 +1,7 @@
 .slides {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,7 @@
   position: absolute;
   cursor: pointer;
   user-select: none;
-  color: var(--white-color);
+  color: var(--secondary-color);
 }
 
 .prev {
@@ -59,4 +59,10 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media  screen and (min-width: 768px) {
+  .slides {
+    height: 80vh;
+  }
 }
