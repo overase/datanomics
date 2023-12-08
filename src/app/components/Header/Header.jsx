@@ -41,7 +41,7 @@ export default function Header() {
             <Link href="/#" className={style.nav_link}>Branches</Link>
           </li>
           <li className={style.nav_item}>
-            <Link href="/#" className={style.nav_link}>Contact</Link>
+            <Link href="/contact" className={style.nav_link}>Contact</Link>
           </li>
           <li className={`${style.nav_item} ${style.phone_block}`}>
             <p className={style.phone}>Phone: 08030742164 </p>

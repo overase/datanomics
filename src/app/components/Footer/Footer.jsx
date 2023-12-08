@@ -22,8 +22,8 @@ const Footer = () => {
           </div>
           <div className={`col ${style.booking}`}>
             <h4 className={`h4 ${style.white_heading} ${style.mb_2}`}>Booking</h4>
-            <p className="text-white text-md">08030742614</p>
-            <p className="text-white text-md">08030742615</p>
+            <p className="text-white text-md">08033323907</p>
+            <p className="text-white text-md">08023284000</p>
           </div>
           <div className={`col ${style.contact}`}>
             <h4 className={`h4 ${style.white_heading} ${style.mb_2}`}>Contact</h4>

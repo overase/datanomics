@@ -1,0 +1,28 @@
+.address_heading {
+  color: var(--secondary-color);
+  font-size: 3em;
+  letter-spacing: 5px;
+  margin-bottom: 0.8em;
+}
+
+.address_card_single {
+  display: flex;
+  padding-block: 1.8em;
+}
+
+.icon {
+  color: var(--secondary-color);
+  font-size: 3em;
+  margin-right: 0.5em;
+}
+
+.address_card_single_heading {
+  font-weight: 600;
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+.address_card_text {
+  line-height: 1.8;
+  font-size: 1.4em;
+}
