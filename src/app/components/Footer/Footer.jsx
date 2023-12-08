@@ -22,22 +22,24 @@ const Footer = () => {
           </div>
           <div className={`col ${style.booking}`}>
             <h4 className={`h4 ${style.white_heading} ${style.mb_2}`}>Booking</h4>
-            <p className="text-white text-md">08033323907</p>
-            <p className="text-white text-md">08023284000</p>
+            <p className="text-white">08033323907</p>
+            <p className="text-white">08023284000</p>
           </div>
           <div className={`col ${style.contact}`}>
             <h4 className={`h4 ${style.white_heading} ${style.mb_2}`}>Contact</h4>
-            <p className="text-white text-md">
+            <p className="text-white">
               booking@datanomicsnigeria.com
             </p>
-            <p className="text-white text-md">
+            <p className="text-white">
               13, Unity Close, Opposite Ogudu Police Station, Off Ogudu Road, Ojota, Lagos
             </p>
           </div>
         </div>
       </div>
       <div className="container">
-        <p><span>c</span> 2023 All Rights Reserved</p>
+        <div className={style.copyright}>
+          <p className={style.copyright_text}><span>&copy;</span> {new Date().getFullYear()} All Rights Reserved</p>
+        </div>
       </div>
     </footer>
   )
