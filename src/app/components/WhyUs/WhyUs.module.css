@@ -1,6 +1,22 @@
 .why_us {
-  padding: 3em 2em;
+  padding: 6em 2em;
   text-align: center;
+}
+
+.why_us_text {
+  font-size: 1.4em;
+  line-height: 1.8;
+}
+
+.why_us_card {
+  padding-block: 1.5em;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0);
+  transition: box-shadow 500ms linear;
+  cursor: pointer;
+}
+
+.why_us_card:hover {
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
 
 .icon_container {
@@ -8,12 +24,16 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--secondary-color);
   display: grid;
   place-items: center;
   margin-bottom: 1em;
   transition: all 500ms ease-in-out;
   overflow-y: hidden;
+}
+
+.light_icon {
+  color: var(--secondary-color);
 }
 
 .fill_icon {
@@ -25,7 +45,7 @@
 }
 
 .icon_container:hover {
-  background: var(--border-color);
+  background: var(--secondary-color);
 }
 
 .icon_container:hover .light_icon {
@@ -46,10 +66,16 @@
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .why_us_text {
+    font-size: 2em;
+  }
+}
+
 
 @media (hover: hover) and (pointer: fine) {
   .icon_container:hover {
-    background: var(--border-color);
+    background: var(--secondary-color);
   }
 
   .icon_container:hover .light_icon {

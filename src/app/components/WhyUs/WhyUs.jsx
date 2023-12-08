@@ -7,9 +7,12 @@ const WhyUs = () => {
   return (
     <div className="container">
       <div className={`${style.why_us}`}>
-        <h1 className={`h1 mb_4`}>WHY US</h1>
+        <div className={`mb_4 ${style.why_us_header}`}>
+          <h1 className={`h1`}>WHY US</h1>
+          <p className={style.why_us_text}>The reason our customers chooses us over competitors are not limited to these</p>
+        </div>
         <div className="flex-col flex-md-row gap-4 justify-space-between">
-          <div className={`col flex-col align-center`}>
+          <div className={`col flex-col align-center ${style.why_us_card}`}>
             <div className={style.icon_container}>
               <PiCameraPlusLight size={30} className={style.light_icon} />
               <PiCameraPlusFill size={30}  className={style.fill_icon} />
@@ -19,7 +22,7 @@ const WhyUs = () => {
               All our hotels and guest houses are located very close to the security agencies
             </p>
           </div>
-          <div className={`col flex-col align-center`}>
+          <div className={`col flex-col align-center ${style.why_us_card}`}>
             <div className={style.icon_container}>
               <IoRestaurantOutline size={30} className={style.light_icon} />
               <IoRestaurant size={30}  className={style.fill_icon} />
@@ -29,7 +32,7 @@ const WhyUs = () => {
               Our restaurant serves African and continental dishes, in a clean and relaxing atmosphere.
             </p>
           </div>
-          <div className={`col flex-col align-center`}>
+          <div className={`col flex-col align-center ${style.why_us_card}`}>
             <div className={style.icon_container}>
               <BsLightbulb size={30} className={style.light_icon} />
               <BsLightbulbFill size={30} className={style.fill_icon} />

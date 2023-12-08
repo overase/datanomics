@@ -5,7 +5,7 @@
 .footer_group {
   display: flex;
   flex-direction: column;
-  padding: 3em 2em;
+  padding: 6em 2em;
   gap: 4em;
 }
 

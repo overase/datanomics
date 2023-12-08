@@ -68,6 +68,16 @@ button {
 }
 
 /* HEADING */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 .h1 {
   font-size: 5.5em;
 }
@@ -89,11 +99,11 @@ button {
 /* MARGIN */
 
 .mb_2 {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .mb_4 {
-  margin-bottom: 1em;
+  margin-bottom: 4em;
 }
 
 /* MARGIN */
