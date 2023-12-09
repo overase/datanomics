@@ -1,14 +1,27 @@
 "use client";
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { MdMenu, MdClose} from "react-icons/md";
 
 import style from './Header.module.css';
 
 export default function Header() {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
   const [open, setOpen] = useState(false);
   const onToggle = () => setOpen(!open);
+
+  useEffect(() => {
+    window
+    .matchMedia("(min-width: 768px)")
+    .addEventListener('change', e => {
+      if (e.matches && open) {
+        setOpen(false);
+      }
+    });
+  }, [open]);
   return (
     <header className={style.header}>
       <nav className={style.nav}>
@@ -33,7 +46,7 @@ export default function Header() {
               <MdClose size={30} />
             </button>
           )}
-        <ul className={`${style.nav_list}`}>
+        <ul className={`${style.nav_list} ${!open && style.none}`}>
           <li className={style.nav_item}>
             <Link href="/#" className={style.nav_link}>About</Link>
           </li>
