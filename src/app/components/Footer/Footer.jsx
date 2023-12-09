@@ -10,13 +10,13 @@ const Footer = () => {
             <h4 className={`h4 ${style.mb_2} ${style.white_heading}`}>Quick links</h4>
             <ul className={style.quick_links}>
               <li className={style.quick_links__item}>
-                <Link href="/#" className={style.quick_links__link}>Home</Link>
+                <Link href="/" className={style.quick_links__link}>Home</Link>
               </li>
               <li className={style.quick_links__item}>
                 <Link href="/#" className={style.quick_links__link}>Branches</Link>
               </li>
               <li className={style.quick_links__item}>
-                <Link href="/#" className={style.quick_links__link}>Contact</Link>
+                <Link href="/contact" className={style.quick_links__link}>Contact</Link>
               </li>
             </ul>
           </div>
