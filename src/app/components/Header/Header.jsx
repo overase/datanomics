@@ -33,7 +33,7 @@ export default function Header() {
               <MdClose size={30} />
             </button>
           )}
-        <ul className={`${style.nav_list} ${style.none}`}>
+        <ul className={`${style.nav_list}`}>
           <li className={style.nav_item}>
             <Link href="/#" className={style.nav_link}>About</Link>
           </li>
