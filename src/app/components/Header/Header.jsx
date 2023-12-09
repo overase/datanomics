@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { FaPhoneAlt } from "react-icons/fa";
 import { MdMenu, MdClose} from "react-icons/md";
 
 import style from './Header.module.css';
@@ -10,8 +11,16 @@ export default function Header() {
   const [matches, setMatches] = useState(
     window.matchMedia("(min-width: 768px)").matches
   );
+  const [fixed, setFixed] = useState(false);
   const [open, setOpen] = useState(false);
   const onToggle = () => setOpen(!open);
+  const onFixed = () => {
+    if (window !== undefined) {
+      console.log(window.scrollY)
+      let windowHeight = window.scrollY;
+      windowHeight > 50 ? setFixed(true) : setFixed(false);
+    }
+  }
 
   useEffect(() => {
     window
@@ -22,8 +31,17 @@ export default function Header() {
       }
     });
   }, [open]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', onFixed);
+    return () => window.removeEventListener('scroll', onFixed);
+  }, []);
   return (
-    <header className={style.header}>
+    <header className={`${style.header} ${fixed && style.fixed}`}>
+      <div className={style.header_contact}>
+        <span><FaPhoneAlt />{'  '}08033323907</span> {'  '}
+        <span>booking@datanomicsnigeria.com</span>
+      </div>
       <nav className={style.nav}>
         <div className={style.logo_container}>
           <Link href="/#" className={style.logo}>
