@@ -69,7 +69,26 @@ export default function Header() {
             <Link href="/#" className={style.nav_link}>About</Link>
           </li>
           <li className={style.nav_item}>
-            <Link href="/#" className={style.nav_link}>Branches</Link>
+            <Link href="#" className={style.nav_link}>
+              Branches
+              <ul className={style.sub_nav_list}>
+                <li className={`${style.sub_nav_list_item}`}>
+                  <Link href="/#" className={style.sub_nav_link}>Ogudu guesthouse</Link>
+                </li>
+                <li className={`${style.sub_nav_list_item}`}>
+                  <Link href="/#" className={style.sub_nav_link}>Onipanu guesthouse</Link>
+                </li>
+                <li className={`${style.sub_nav_list_item}`}>
+                  <Link href="/#" className={style.sub_nav_link}>Parliament hotel</Link>
+                </li>
+                <li className={`${style.sub_nav_list_item}`}>
+                  <Link href="/#" className={style.sub_nav_link}>Ishua hotel</Link>
+                </li>
+                <li className={`${style.sub_nav_list_item}`}>
+                  <Link href="/#" className={style.sub_nav_link}>Ugbeh hotel</Link>
+                </li>
+              </ul>
+            </Link>
           </li>
           <li className={style.nav_item}>
             <Link href="/contact" className={style.nav_link}>Contact</Link>
