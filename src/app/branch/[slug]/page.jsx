@@ -51,26 +51,6 @@ export default function Page({ params: { slug } }) {
                           </li>
                         ))
                       }
-                      {/* <li className={style.branch_facility_list_item}>
-                        <BiSolidCctv className={style.fill} />
-                        <span>Surveillance Cameras (CCTV)</span>
-                      </li>
-                      <li className={style.branch_facility_list_item}>
-                        <PiTelevisionSimpleFill className={style.fill} />
-                        <span>Plasma Televsion</span>
-                      </li>
-                      <li className={style.branch_facility_list_item}>
-                        <FaSatelliteDish className={style.fill} />
-                        <span>DSTV</span>
-                      </li>
-                      <li className={style.branch_facility_list_item}>
-                        <BiSolidFridge className={style.fill} />
-                        <span>Bedroom Fridge</span>
-                      </li>
-                      <li className={style.branch_facility_list_item}>
-                        <LuAirVent className={style.fill} />
-                        <span>Air Conditioning</span>
-                      </li> */}
                     </ul>
                   </div>
                 </div>
