@@ -6,15 +6,18 @@ import { BiSolidFridge } from "react-icons/bi";
 import { LuAirVent } from "react-icons/lu";
 import { MdCircle } from "react-icons/md";
 
+import { branches } from "../lib/branches";
+
 import style from './page.module.css';
 
 export default function Page({ params: { slug } }) {
+  const branch = branches.find((branch) => slug === branch.slug);
   return (
     <main>
       <section>
         <div className="container">
           <div className={style.branch_content}>
-            <h1 className={`h1 ${style.branch_title}`}>Ogudu</h1>
+            <h1 className={`h1 ${style.branch_title}`}>{branch.name}</h1>
             <div className={style.branch_body}>
               <div className={style.lines}>
                 <div className={style.line_1}></div>
@@ -27,32 +30,28 @@ export default function Page({ params: { slug } }) {
                   <div className={style.branch_room}>
                     <h3 className={`h3 ${style.available_room}`}>Available rooms</h3>
                     <ul className={style.branch_room_list}>
-                      <li className={style.branch_room_list_item}>
-                        <MdCircle className={style.fill} />
-                        <span>Single Room</span>
-                      </li>
-                      <li className={style.branch_room_list_item}>
-                        <MdCircle className={style.fill}  />
-                        <span>Executive VIP</span>
-                      </li>
-                      <li className={style.branch_room_list_item}>
-                        <MdCircle className={style.fill}  />
-                        <span>Governor{"'"}s Suite</span>
-                      </li>
-                      <li className={style.branch_room_list_item}>
-                        <MdCircle className={style.fill}  />
-                        <span>Royal Suite</span>
-                      </li>
+                      {
+                        branch.rooms.map((room) => (
+                          <li className={style.branch_room_list_item} key={branch.name}>
+                          <MdCircle className={style.fill} />
+                          <span>{room}</span>
+                        </li>
+                        ))
+                      }
                     </ul>
                   </div>
                   <div className={style.branch_facility}>
                     <h3 className={`h4 ${style.facility_name}`}>Facilities</h3>
                     <ul className={style.branch_facility_list}>
-                      <li className={style.branch_facility_list_item}>
-                        <AiFillBulb className={style.fill} />
-                        <span>24 hrs power supply</span>
-                      </li>
-                      <li className={style.branch_facility_list_item}>
+                      {
+                        branch.facilities.map((facility, index) => (
+                          <li className={style.branch_facility_list_item} key={index}>
+                            {facility.icon}
+                            <span>{facility.name}</span>
+                          </li>
+                        ))
+                      }
+                      {/* <li className={style.branch_facility_list_item}>
                         <BiSolidCctv className={style.fill} />
                         <span>Surveillance Cameras (CCTV)</span>
                       </li>
@@ -71,7 +70,7 @@ export default function Page({ params: { slug } }) {
                       <li className={style.branch_facility_list_item}>
                         <LuAirVent className={style.fill} />
                         <span>Air Conditioning</span>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
