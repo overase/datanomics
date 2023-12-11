@@ -73,19 +73,19 @@ export default function Header() {
               Branches
               <ul className={style.sub_nav_list}>
                 <li className={`${style.sub_nav_list_item}`}>
-                  <Link href="/#" className={style.sub_nav_link}>Ogudu guesthouse</Link>
+                  <Link href="/branch/ogudu" className={style.sub_nav_link}>Ogudu guesthouse</Link>
                 </li>
                 <li className={`${style.sub_nav_list_item}`}>
-                  <Link href="/#" className={style.sub_nav_link}>Onipanu guesthouse</Link>
+                  <Link href="/branch/onipanu" className={style.sub_nav_link}>Onipanu guesthouse</Link>
                 </li>
                 <li className={`${style.sub_nav_list_item}`}>
-                  <Link href="/#" className={style.sub_nav_link}>Parliament hotel</Link>
+                  <Link href="/branch/parliament" className={style.sub_nav_link}>Parliament hotel</Link>
                 </li>
                 <li className={`${style.sub_nav_list_item}`}>
-                  <Link href="/#" className={style.sub_nav_link}>Ishua hotel</Link>
+                  <Link href="/ishua" className={style.sub_nav_link}>Ishua hotel</Link>
                 </li>
                 <li className={`${style.sub_nav_list_item}`}>
-                  <Link href="/#" className={style.sub_nav_link}>Ugbeh hotel</Link>
+                  <Link href="/ugbeh" className={style.sub_nav_link}>Ugbeh hotel</Link>
                 </li>
               </ul>
             </Link>

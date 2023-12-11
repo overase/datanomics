@@ -1,0 +1,175 @@
+.main {
+
+}
+
+.branch_title {
+  text-align: center;
+  color: var(--secondary-color);
+  padding-block: 0.5em;
+  border: 1px solid rgba(215, 215, 215, 0.5);
+}
+
+.branch_body {
+  --border-color: 1px solid rgba(215, 215, 215, 0.5);
+  padding-top: 2em;
+  padding-bottom: 8em;
+  background-color: #fafafa;
+  padding-inline: 4em;
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4em;
+}
+
+.line_1 {
+  height: 1px;
+  background-color: var(--secondary-color);
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.line_2 {
+  height: 1px;
+  background-color: var(--secondary-color);
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.line_3 {
+  height: 1px;
+  background-color: var(--secondary-color);
+  width: 50px;
+}
+
+.branch_room_slides {
+  border: var(--border-color);
+  width: 100%;
+  height: 300px;
+  padding-block: 2em;
+  margin-bottom: 4em;
+}
+
+.branch_details {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.branch_room {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+
+.available_room {
+  position: relative;
+  padding-block: 0.2em;
+  font-weight: 600;
+}
+
+.available_room::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--secondary-color);
+  content: "";
+}
+
+.available_room::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--secondary-color);
+  content: "";
+}
+
+.branch_room_list {
+  display: flex;
+  gap: 1.5em;
+  flex-direction: column;
+}
+
+.branch_room_list_item {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.branch_facility {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding-block: 2em;
+}
+
+.branch_facility_list {
+  display: flex;
+  gap: 1.5em;
+  flex-direction: column;
+}
+
+.branch_facility_list_item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.5em;
+}
+
+.fill {
+  color: var(--secondary-color);
+  font-size: 25px;
+}
+
+.facility_name {
+  font-weight: 400;
+  color: var(--secondary-color);
+  letter-spacing: 5px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .branch_room_list {
+    flex-direction: column;
+  }
+
+  .branch_facility_list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .branch_body {
+    /* background-color: red; */
+  }
+
+  .branch_room_slides {
+
+  }
+
+  .branch_details {
+    flex-direction: row;
+    gap: 4em;
+  }
+
+  .branch_room {
+    flex: 4;
+    padding-inline: 1.5em;
+    border: var(--border-color);
+  }
+
+  .branch_facility {
+    flex: 2;
+    border: var(--border-color);
+    padding-inline: 1.5em;
+  }
+}
