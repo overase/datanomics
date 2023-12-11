@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
 
 import WalkWay from "../../../../public/images/walkway.jpg";
@@ -8,22 +8,21 @@ import OpenBar from "../../../../public/images/datanomics_onipanu_openbar.jpg";
 import Restaurant from "../../../../public/images/restaurant.jpg";
 
 import style from './ImageSlider.module.css';
-import Image from "next/image";
 
 const images = [
   {
     id: 1,
-    src: WalkWay,
+    url: WalkWay,
     caption: "Walkway"
   },
   {
     id: 2,
-    src: OpenBar,
+    url: OpenBar,
     caption: "Open Bar"
   },
   {
     id: 2,
-    src: Restaurant,
+    url: Restaurant,
     caption: "Restaurant"
   }
 ];
@@ -36,6 +35,8 @@ const ImageSlider = () => {
 
   const prev = () => setCurrent(current === 0 ? length - 1 : current - 1);
 
+  const goToSlide = (index) => setCurrent(index); 
+
 //   useEffect(() => {
 //     const interval = setInterval(() => {
 //         next();
@@ -46,24 +47,16 @@ const ImageSlider = () => {
     <div className={style.slides}>
       <FaChevronCircleLeft className={`${style.icon} ${style.prev}`} onClick={prev} />
       <FaChevronCircleRight className={`${style.icon} ${style.next}`} onClick={next} />
-      {
-        images.map((slide, index) => (
-          <div className={`${style.slide} ${index === current && style.active}`} key={index}>
-            {
-              index === current && (
-                <div className={style.slide_content}>
-                  <Image
-                    src={slide.src} alt="image"
-                    className={style.image}
-                    fill
-                  />
-                  {/* <span className={style.slide_caption}>{slide.caption}</span> */}
-                </div>
-              )
-            }
-          </div>
-        ))
-      }
+      <div style={{
+        backgroundImage: `linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(${images[current].url.src})`}}
+        className={style.slide}>
+          <span className={style.slide_caption}>{images[current].caption}</span>
+        </div>
+      <div className={style.slides_dot}>
+        {images.map((_image, index) =>(
+          <div className={`${style.slide_dot} ${index === current && style.slide_dot_active}`} key={index} onClick={() => goToSlide(index)} />
+        ))}
+      </div>
     </div>
   );
 };
