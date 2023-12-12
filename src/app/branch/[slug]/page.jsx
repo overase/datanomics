@@ -10,6 +10,7 @@ import { branches } from "../lib/branches";
 
 import style from './page.module.css';
 import { ImageSlider } from "@/app/components/ImageSlider/ImageSlider";
+import { HorizontalLines } from "@/app/components/HorizontalLines/HorizontalLines";
 
 export default function Page({ params: { slug } }) {
   const branch = branches.find((branch) => slug === branch.slug);
@@ -20,11 +21,7 @@ export default function Page({ params: { slug } }) {
           <div className={style.branch_content}>
             <h1 className={`h1 ${style.branch_title}`}>{branch.name}</h1>
             <div className={style.branch_body}>
-              <div className={style.lines}>
-                <div className={style.line_1}></div>
-                <div className={style.line_2}></div>
-                <div className={style.line_3}></div>
-              </div>
+              <HorizontalLines />
               <div className="container">
                 <div className={style.branch_room_slides}>
                   <ImageSlider slides={branch.images} />

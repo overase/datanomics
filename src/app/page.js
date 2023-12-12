@@ -1,5 +1,7 @@
 import { ImageSlider } from './components/ImageSlider/ImageSlider';
+import { Hotels } from './components/Hotels/Hotels';
 import { WhyUs } from './components/WhyUs/WhyUs';
+
 
 import Ishua from "../../public/images/ishua_standard_room_2.jpg";
 import Parliament from "../../public/images/parliament_12.jpg";
@@ -43,6 +45,7 @@ export default function Home() {
       <div className={style.carousel}>
         <ImageSlider slides={slides} />
       </div>
+      <Hotels />
       <WhyUs />
     </main>
   );
