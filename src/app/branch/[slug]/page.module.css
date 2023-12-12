@@ -17,33 +17,6 @@
   padding-inline: 4em;
 }
 
-.lines {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 4em;
-}
-
-.line_1 {
-  height: 1px;
-  background-color: var(--secondary-color);
-  width: 50px;
-  margin-bottom: 10px;
-}
-
-.line_2 {
-  height: 1px;
-  background-color: var(--secondary-color);
-  width: 200px;
-  margin-bottom: 10px;
-}
-
-.line_3 {
-  height: 1px;
-  background-color: var(--secondary-color);
-  width: 50px;
-}
-
 .branch_room_slides { 
   border: var(--border-color);
   width: 100%;
