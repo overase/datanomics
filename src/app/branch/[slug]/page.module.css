@@ -148,13 +148,6 @@
 }
 
 @media screen and (min-width: 991px) {
-  .branch_body {
-    /* background-color: red; */
-  }
-
-  .branch_room_slides {
-
-  }
 
   .branch_details {
     flex-direction: row;
