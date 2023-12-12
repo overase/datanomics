@@ -44,11 +44,11 @@
   width: 50px;
 }
 
-.branch_room_slides {
+.branch_room_slides { 
   border: var(--border-color);
   width: 100%;
-  height: 300px;
-  padding-block: 2em;
+  height: 80vh;
+  margin: 0 auto;  
   margin-bottom: 4em;
 }
 

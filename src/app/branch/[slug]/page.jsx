@@ -9,6 +9,7 @@ import { MdCircle } from "react-icons/md";
 import { branches } from "../lib/branches";
 
 import style from './page.module.css';
+import { ImageSlider } from "@/app/components/ImageSlider/ImageSlider";
 
 export default function Page({ params: { slug } }) {
   const branch = branches.find((branch) => slug === branch.slug);
@@ -25,7 +26,9 @@ export default function Page({ params: { slug } }) {
                 <div className={style.line_3}></div>
               </div>
               <div className="container">
-                <div className={style.branch_room_slides}></div>
+                <div className={style.branch_room_slides}>
+                  <ImageSlider slides={branch.images} />
+                </div>
                 <div className={style.branch_details}>
                   <div className={style.branch_room}>
                     <h3 className={`h3 ${style.available_room}`}>Available rooms</h3>
