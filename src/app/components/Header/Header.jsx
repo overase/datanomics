@@ -16,7 +16,6 @@ export default function Header() {
   const onToggle = () => setOpen(!open);
   const onFixed = () => {
     if (window !== undefined) {
-      console.log(window.scrollY)
       let windowHeight = window.scrollY;
       windowHeight > 50 ? setFixed(true) : setFixed(false);
     }
