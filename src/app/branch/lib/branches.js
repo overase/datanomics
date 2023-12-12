@@ -35,6 +35,10 @@ const branches = [
     name: "ogudu",
     slug: "ogudu",
     rooms: ["Standard", "Annex", "VIP", "Senate"],
+    location: {
+      lat: 6.581770446624733,
+      lng: 3.385919266832977
+    },
     facilities: [
       {
         icon: <AiFillBulb className={style.fill} />,
@@ -75,10 +79,14 @@ const branches = [
     ]
   },
   {
-    id: 1,
+    id: 2,
     name: "onipanu",
     slug: "onipanu",
     rooms: ["Single", "Executive standard", "Royal suite", "Double twin", "Governor suite"],
+    location: {
+      lat: 6.5370591978876496,
+      lng: 3.3682871668326397
+    },
     facilities: [
       {
         icon: <AiFillBulb className={style.fill} />,
@@ -119,10 +127,14 @@ const branches = [
     ]
   },
   {
-    id: 1,
+    id: 3,
     name: "Parliament",
     slug: "parliament",
     rooms: ["Single", "Executive VIP", "Governor suite", "Royal suite"],
+    location: {
+      lat: 7.236438730252321,
+      lng: 5.223838838003068
+    },
     facilities: [
       {
         icon: <AiFillBulb className={style.fill} />,
@@ -193,10 +205,14 @@ const branches = [
     ]
   },
   {
-    id: 1,
+    id: 4,
     name: "ugbeh",
     slug: "ugbeh",
     rooms: ["Standard", "Executive vip"],
+    location: {
+      lat: 7.525072203466108,
+      lng: 5.7669265956769316
+    },
     facilities: [
       {
         icon: <AiFillBulb className={style.fill} />,
@@ -232,10 +248,14 @@ const branches = [
     ]
   },
   {
-    id: 1,
+    id: 5,
     name: "ishua",
     slug: "ishua",
     rooms: ["Single", "Standard", "Executive", "VIP", "Royal suite 1", "Royal suite 2"],
+    location: {
+      lat: 7.449359392011563,
+      lng: 5.9086481489433655
+    },
     facilities: [
       {
         icon: <AiFillBulb className={style.fill} />,

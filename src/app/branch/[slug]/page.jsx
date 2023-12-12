@@ -1,9 +1,3 @@
-import { AiFillBulb } from "react-icons/ai";
-import { BiSolidCctv } from "react-icons/bi";
-import { PiTelevisionSimpleFill } from "react-icons/pi";
-import { FaSatelliteDish } from "react-icons/fa6";
-import { BiSolidFridge } from "react-icons/bi";
-import { LuAirVent } from "react-icons/lu";
 import { MdCircle } from "react-icons/md";
 
 import { branches } from "../lib/branches";
@@ -11,6 +5,7 @@ import { branches } from "../lib/branches";
 import style from './page.module.css';
 import { ImageSlider } from "@/app/components/ImageSlider/ImageSlider";
 import { HorizontalLines } from "@/app/components/HorizontalLines/HorizontalLines";
+import { Map } from "@/app/components/Map/Map";
 
 export default function Page({ params: { slug } }) {
   const branch = branches.find((branch) => slug === branch.slug);
@@ -31,8 +26,8 @@ export default function Page({ params: { slug } }) {
                     <h3 className={`h3 ${style.available_room}`}>Available rooms</h3>
                     <ul className={style.branch_room_list}>
                       {
-                        branch.rooms.map((room) => (
-                          <li className={style.branch_room_list_item} key={branch.name}>
+                        branch.rooms.map((room, index) => (
+                          <li className={style.branch_room_list_item} key={index}>
                           <MdCircle className={style.fill} />
                           <span>{room}</span>
                         </li>
@@ -56,6 +51,7 @@ export default function Page({ params: { slug } }) {
                 </div>
               </div>
             </div>
+            <Map lat={branch.location.lat} lng={branch.location.lng} />
           </div>
         </div>
       </section>
