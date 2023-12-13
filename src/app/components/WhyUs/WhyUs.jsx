@@ -1,7 +1,10 @@
-import style from "./WhyUs.module.css";
 import { PiCameraPlusFill, PiCameraPlusLight } from "react-icons/pi";
 import { IoRestaurantOutline, IoRestaurant } from "react-icons/io5";
 import { BsLightbulbFill, BsLightbulb } from "react-icons/bs";
+
+import { HorizontalLines } from "../HorizontalLines/HorizontalLines";
+
+import style from "./WhyUs.module.css";
 
 const WhyUs = () => {
   return (
@@ -9,6 +12,7 @@ const WhyUs = () => {
       <div className={`${style.why_us}`}>
         <div className={`mb_4 ${style.why_us_header}`}>
           <h1 className={`h1`}>WHY US</h1>
+          <HorizontalLines />
           <p className={style.why_us_text}>The reason our customers chooses us over competitors are not limited to these</p>
         </div>
         <div className="flex-col flex-md-row gap-4 justify-space-between">

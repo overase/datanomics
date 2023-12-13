@@ -29,7 +29,7 @@ const ImageSlider = ({ slides }) => {
         backgroundImage: `linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(${slides[current].url.src})`}}
         className={style.slide}>
           <span className={style.slide_caption}>{slides[current].caption}</span>
-        </div>
+      </div>
       <div className={style.slides_dot}>
         {slides.map((_image, index) =>(
           <div className={`${style.slide_dot} ${index === current && style.slide_dot_active}`} key={index} onClick={() => goToSlide(index)} />
