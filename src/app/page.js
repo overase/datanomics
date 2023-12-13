@@ -1,6 +1,7 @@
 import { ImageSlider } from './components/ImageSlider/ImageSlider';
 import { Hotels } from './components/Hotels/Hotels';
 import { WhyUs } from './components/WhyUs/WhyUs';
+import { About } from './components/About/About';
 
 
 import Ishua from "../../public/images/ishua_standard_room_2.jpg";
@@ -42,9 +43,10 @@ const slides = [
 export default function Home() {
   return (
     <main>
-      <div className={style.carousel}>
+      <section className={style.carousel}>
         <ImageSlider slides={slides} />
-      </div>
+      </section>
+      <About />
       <Hotels />
       <WhyUs />
     </main>
