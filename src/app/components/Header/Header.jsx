@@ -8,6 +8,9 @@ import { MdMenu, MdClose} from "react-icons/md";
 import style from './Header.module.css';
 
 export default function Header() {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
   const [fixed, setFixed] = useState(false);
   const [open, setOpen] = useState(false);
   const onToggle = () => setOpen(!open);
