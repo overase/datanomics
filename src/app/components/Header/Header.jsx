@@ -8,9 +8,6 @@ import { MdMenu, MdClose} from "react-icons/md";
 import style from './Header.module.css';
 
 export default function Header() {
-  const [matches, setMatches] = useState(
-    window.matchMedia("(min-width: 768px)").matches
-  );
   const [fixed, setFixed] = useState(false);
   const [open, setOpen] = useState(false);
   const onToggle = () => setOpen(!open);
@@ -70,24 +67,24 @@ export default function Header() {
           <li className={style.nav_item}>
             <Link href="#" className={style.nav_link}>
               Branches
-              <ul className={style.sub_nav_list}>
-                <li className={`${style.sub_nav_list_item}`}>
-                  <Link href="/branch/ogudu" className={style.sub_nav_link}>Ogudu guesthouse</Link>
-                </li>
-                <li className={`${style.sub_nav_list_item}`}>
-                  <Link href="/branch/onipanu" className={style.sub_nav_link}>Onipanu guesthouse</Link>
-                </li>
-                <li className={`${style.sub_nav_list_item}`}>
-                  <Link href="/branch/parliament" className={style.sub_nav_link}>Parliament hotel</Link>
-                </li>
-                <li className={`${style.sub_nav_list_item}`}>
-                  <Link href="/ishua" className={style.sub_nav_link}>Ishua hotel</Link>
-                </li>
-                <li className={`${style.sub_nav_list_item}`}>
-                  <Link href="/ugbeh" className={style.sub_nav_link}>Ugbeh hotel</Link>
-                </li>
-              </ul>
             </Link>
+            <ul className={style.sub_nav_list}>
+              <li className={`${style.sub_nav_list_item}`}>
+                <Link href="/branch/ogudu" className={style.sub_nav_link}>Ogudu guesthouse</Link>
+              </li>
+              <li className={`${style.sub_nav_list_item}`}>
+                <Link href="/branch/onipanu" className={style.sub_nav_link}>Onipanu guesthouse</Link>
+              </li>
+              <li className={`${style.sub_nav_list_item}`}>
+                <Link href="/branch/parliament" className={style.sub_nav_link}>Parliament hotel</Link>
+              </li>
+              <li className={`${style.sub_nav_list_item}`}>
+                <Link href="/branch/ishua" className={style.sub_nav_link}>Ishua hotel</Link>
+              </li>
+              <li className={`${style.sub_nav_list_item}`}>
+                <Link href="/branch/ugbeh" className={style.sub_nav_link}>Ugbeh hotel</Link>
+              </li>
+            </ul>
           </li>
           <li className={style.nav_item}>
             <Link href="/contact" className={style.nav_link}>Contact</Link>

@@ -61,22 +61,28 @@
 }
 
 .slide_dot {
-  width: 10px;
-  height: 10px;
+  height: 12px;
+  width: 12px;
   background-color: var(--secondary-color);
-  border-radius: 50%;
+  border-radius: 6px;
   cursor: pointer;
   margin: 0 10px;
+  transition: width 0.3s ease-in-out 0s, height 0.3s ease-in-out 0s;
 }
 
 .slide_dot_active {
   background-color: rgba(245, 215, 215, 0.5);
+  width: 30px;
 }
 
 @media  screen and (min-width: 768px) {
   .slides {
     height: 80vh;
   }
+}
+
+@keyframes dot {
+  
 }
 
 @keyframes caption {
