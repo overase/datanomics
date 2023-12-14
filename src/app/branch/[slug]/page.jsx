@@ -31,8 +31,8 @@ export default function Page({ params: { slug } }) {
                     <h3 className={`h3 ${style.available_room}`}>Available rooms</h3>
                     <ul className={style.branch_room_list}>
                       {
-                        branch.rooms.map((room) => (
-                          <li className={style.branch_room_list_item} key={branch.name}>
+                        branch.rooms.map((room, index) => (
+                          <li className={style.branch_room_list_item} key={index}>
                           <MdCircle className={style.fill} />
                           <span>{room}</span>
                         </li>

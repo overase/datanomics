@@ -75,7 +75,7 @@ const branches = [
     ]
   },
   {
-    id: 1,
+    id: 2,
     name: "onipanu",
     slug: "onipanu",
     rooms: ["Single", "Executive standard", "Royal suite", "Double twin", "Governor suite"],
@@ -119,7 +119,7 @@ const branches = [
     ]
   },
   {
-    id: 1,
+    id: 3,
     name: "Parliament",
     slug: "parliament",
     rooms: ["Single", "Executive VIP", "Governor suite", "Royal suite"],
@@ -193,7 +193,7 @@ const branches = [
     ]
   },
   {
-    id: 1,
+    id: 4,
     name: "ugbeh",
     slug: "ugbeh",
     rooms: ["Standard", "Executive vip"],
@@ -232,7 +232,7 @@ const branches = [
     ]
   },
   {
-    id: 1,
+    id: 5,
     name: "ishua",
     slug: "ishua",
     rooms: ["Single", "Standard", "Executive", "VIP", "Royal suite 1", "Royal suite 2"],
