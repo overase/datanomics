@@ -1,20 +1,34 @@
+"use client";
+
+import { useMemo } from "react";
+import dynamic from "next/dynamic";
 import { MdCircle } from "react-icons/md";
 
 import { branches } from "../lib/branches";
 
-import style from './page.module.css';
 import { ImageSlider } from "@/app/components/ImageSlider/ImageSlider";
 import { HorizontalLines } from "@/app/components/HorizontalLines/HorizontalLines";
-import { Map } from "@/app/components/Map/Map";
+import style from './page.module.css';
 
 export default function Page({ params: { slug } }) {
   const branch = branches.find((branch) => slug === branch.slug);
+  const Map = useMemo(() => dynamic(
+    () => import('../../components/Map/Map'),
+    { 
+      loading: () => <p>A map is loading</p>,
+      ssr: false
+    }
+  ), []);
   return (
     <main>
       <section>
         <div className="container">
           <div className={style.branch_content}>
-            <h1 className={`h1 ${style.branch_title}`}>{branch.name}</h1>
+            <h1 className={`h1 ${style.branch_title}`}>
+              {branch.name}
+              <br />
+              {branch?.subheading && branch?.subheading}
+            </h1>
             <div className={style.branch_body}>
               <HorizontalLines />
               <div className="container">
@@ -54,6 +68,13 @@ export default function Page({ params: { slug } }) {
             <Map lat={branch.location.lat} lng={branch.location.lng} />
           </div>
         </div>
+      </section>
+      <section className={style.map}>
+        <Map
+          position={[branch.location.lat, branch.location.lng]}
+          name={branch.name}
+          subheading={branch?.subheading}
+        />
       </section>
     </main>
   );

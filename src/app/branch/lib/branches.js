@@ -32,8 +32,9 @@ import style from "../[slug]/page.module.css";
 const branches = [
   {
     id: 1,
-    name: "ogudu",
-    slug: "ogudu",
+    name: "Datanomics",
+    subheading: "ogudu guesthouse",
+    slug: "datanomics-guesthouse-ogudu",
     rooms: ["Standard", "Annex", "VIP", "Senate"],
     location: {
       lat: 6.581770446624733,
@@ -80,8 +81,9 @@ const branches = [
   },
   {
     id: 2,
-    name: "onipanu",
-    slug: "onipanu",
+    name: "Datanomics",
+    subheading: "onipanu guesthouse",
+    slug: "datanomics-guesthouse-onipanu",
     rooms: ["Single", "Executive standard", "Royal suite", "Double twin", "Governor suite"],
     location: {
       lat: 6.5370591978876496,
@@ -128,8 +130,8 @@ const branches = [
   },
   {
     id: 3,
-    name: "Parliament",
-    slug: "parliament",
+    name: "Parliament Hotel",
+    slug: "parliament-hotel",
     rooms: ["Single", "Executive VIP", "Governor suite", "Royal suite"],
     location: {
       lat: 7.236438730252321,
@@ -206,8 +208,8 @@ const branches = [
   },
   {
     id: 4,
-    name: "ugbeh",
-    slug: "ugbeh",
+    name: "Ugbeh Hotel",
+    slug: "ugbeh-hotel",
     rooms: ["Standard", "Executive vip"],
     location: {
       lat: 7.525072203466108,
@@ -249,8 +251,8 @@ const branches = [
   },
   {
     id: 5,
-    name: "ishua",
-    slug: "ishua",
+    name: "Ishua Hotel",
+    slug: "ishua-hotel",
     rooms: ["Single", "Standard", "Executive", "VIP", "Royal suite 1", "Royal suite 2"],
     location: {
       lat: 7.449359392011563,

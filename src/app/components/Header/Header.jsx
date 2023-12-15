@@ -70,19 +70,19 @@ export default function Header() {
             </Link>
             <ul className={style.sub_nav_list}>
               <li className={`${style.sub_nav_list_item}`}>
-                <Link href="/branch/ogudu" className={style.sub_nav_link}>Ogudu guesthouse</Link>
+                <Link href="/branch/datanomics-guesthouse-ogudu" className={style.sub_nav_link}>Ogudu guesthouse</Link>
               </li>
               <li className={`${style.sub_nav_list_item}`}>
-                <Link href="/branch/onipanu" className={style.sub_nav_link}>Onipanu guesthouse</Link>
+                <Link href="/branch/datanomics-guesthouse-onipanu" className={style.sub_nav_link}>Onipanu guesthouse</Link>
               </li>
               <li className={`${style.sub_nav_list_item}`}>
-                <Link href="/branch/parliament" className={style.sub_nav_link}>Parliament hotel</Link>
+                <Link href="/branch/parliament-hotel" className={style.sub_nav_link}>Parliament hotel</Link>
               </li>
               <li className={`${style.sub_nav_list_item}`}>
-                <Link href="/branch/ishua" className={style.sub_nav_link}>Ishua hotel</Link>
+                <Link href="/branch/ishua-hotel" className={style.sub_nav_link}>Ishua hotel</Link>
               </li>
               <li className={`${style.sub_nav_list_item}`}>
-                <Link href="/branch/ugbeh" className={style.sub_nav_link}>Ugbeh hotel</Link>
+                <Link href="/branch/ugbeh-hotel" className={style.sub_nav_link}>Ugbeh hotel</Link>
               </li>
             </ul>
           </li>
