@@ -1,4 +1,5 @@
-import { Inter, Roboto_Mono, Poppins } from 'next/font/google';
+import { Poppins } from 'next/font/google';
+import Script from 'next/script';
 import './tokens.css';
 import './globals.css';
 import './utilities.css';
@@ -24,6 +25,16 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID}`} />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+ 
+            gtag('config', ${NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID});
+          `}
+      </Script>
       </body>
     </html>
   );
