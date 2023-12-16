@@ -1,31 +1,44 @@
-import { MapContainer, Marker, TileLayer, Tooltip, Popup } from "react-leaflet"
-import "leaflet/dist/leaflet.css";
-import "leaflet-defaulticon-compatibility";
-import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
+import { useEffect, useMemo, useRef } from "react";
+import { Loader } from "@googlemaps/js-api-loader";
 
 const Map = ({ position, name, subheading }) => {
+  const mapRef = useRef(null);
+  const mapOptions = useMemo(() => {
+    return {
+      center: {
+        lat: position.lat,
+        lng: position.lng
+      },
+      zoom: 18
+    }
+  }, [position]);
+  useEffect(() => {
+    const loader = new Loader({
+      apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY,
+      version: "weekly",
+    });
+    loader
+      .importLibrary("maps")
+      .then(({Map}) => {
+        const map = new Map(mapRef.current, mapOptions);
+        const infoWindow = new google.maps.InfoWindow();
+        const marker = new google.maps.Marker({
+          map: map,
+          position: mapOptions.center,
+          title: `${name} <br> ${subheading || ''}`,
+          label: "H"
+        });
+        marker.addListener("click", () => {
+          infoWindow.close();
+          infoWindow.setContent(marker.getTitle());
+          infoWindow.open(marker.getMap(), marker);
+        });
+      })
+      .catch((e) => console.log(e))
+  }, [mapOptions, name, subheading]);
   return (
-    <MapContainer
-      style={{ height: '100%', width: '100%' }}
-      center={position} zoom={20} scrollWheelZoom={false}>
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      <Marker position={position}>
-        <Popup>
-          <span
-            style={{
-              fontSize: "2em",
-              textAlign: "center"
-            }}
-          >
-            {name} <br /> {subheading || ''}
-          </span>
-        </Popup>
-      </Marker>
-    </MapContainer>
+    <div style={{ height: "100%", width: "100%" }} ref={mapRef} />
   );
 }
 
-export default Map;
+export { Map };

@@ -8,17 +8,19 @@ import { branches } from "../lib/branches";
 
 import { ImageSlider } from "@/app/components/ImageSlider/ImageSlider";
 import { HorizontalLines } from "@/app/components/HorizontalLines/HorizontalLines";
+
+import { Map } from "@/app/components/Map/Map";
 import style from './page.module.css';
 
 export default function Page({ params: { slug } }) {
   const branch = branches.find((branch) => slug === branch.slug);
-  const Map = useMemo(() => dynamic(
-    () => import('../../components/Map/Map'),
-    { 
-      loading: () => <p>A map is loading</p>,
-      ssr: false
-    }
-  ), []);
+  // const Map = useMemo(() => dynamic(
+  //   () => import('../../components/Map/Map'),
+  //   { 
+  //     loading: () => <p>A map is loading</p>,
+  //     ssr: false
+  //   }
+  // ), []);
   return (
     <main>
       <section>
@@ -65,13 +67,13 @@ export default function Page({ params: { slug } }) {
                 </div>
               </div>
             </div>
-            <Map lat={branch.location.lat} lng={branch.location.lng} />
+            {/* <Map lat={branch.location.lat} lng={branch.location.lng} /> */}
           </div>
         </div>
       </section>
       <section className={style.map}>
         <Map
-          position={[branch.location.lat, branch.location.lng]}
+          position={branch.location}
           name={branch.name}
           subheading={branch?.subheading}
         />
