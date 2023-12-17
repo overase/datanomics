@@ -90,7 +90,7 @@ export default function Header() {
             <Link href="/contact" className={style.nav_link}>Contact</Link>
           </li>
           <li className={`${style.nav_item} ${style.phone_block}`}>
-            <p className={style.phone}>Phone: 08030742164 </p>
+            <p className={style.phone}>Phone: 08033323907 </p>
           </li>
         </ul>
       </nav>
