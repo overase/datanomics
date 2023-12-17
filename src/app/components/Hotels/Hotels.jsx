@@ -20,31 +20,31 @@ const Hotels = () => {
       <div className="container">
         <div className={style.hotel_content}>
           <figure className={style.hotel_card}>
-            <Image src={OguduHotel} alt="ugbeh" className={style.hotel_image} fill />
+            <Image src={OguduHotel} alt="ogudu" className={style.hotel_image} fill />
             <figcaption className={style.figcaption}>
               <h3 className={`h3 ${style.hotel_card_title}`}>Ogudu Guesthouse</h3>
-              <Link href="/#" className={style.btn_view}>View More</Link>
+              <Link href="/branch/datanomics-guesthouse-ogudu" className={style.btn_view}>View More</Link>
             </figcaption>
           </figure>
           <figure className={style.hotel_card}>
-            <Image src={OnipanuHotel} alt="ugbeh" className={style.hotel_image} fill />
+            <Image src={OnipanuHotel} alt="onipanu" className={style.hotel_image} fill />
             <figcaption className={style.figcaption}>
               <h3 className={`h3 ${style.hotel_card_title}`}>Onipanu Guesthouse</h3>
-              <Link href="/#" className={style.btn_view}>View More</Link>
+              <Link href="/branch/datanomics-guesthouse-onipanu" className={style.btn_view}>View More</Link>
             </figcaption>
           </figure>
           <figure className={style.hotel_card}>
-            <Image src={ParliamentHotel} alt="ugbeh" className={style.hotel_image} fill />
+            <Image src={ParliamentHotel} alt="parliament" className={style.hotel_image} fill />
             <figcaption className={style.figcaption}>
               <h3 className={`h3 ${style.hotel_card_title}`}>Parliament Hotel</h3>
-              <Link href="/#" className={style.btn_view}>View More</Link>
+              <Link href="/branch/parliament-hotel" className={style.btn_view}>View More</Link>
             </figcaption>
           </figure>
           <figure className={style.hotel_card}>
-            <Image src={IshuaHotel} alt="ugbeh" className={style.hotel_image} fill />
+            <Image src={IshuaHotel} alt="ishua" className={style.hotel_image} fill />
             <figcaption className={style.figcaption}>
               <h3 className={`h3 ${style.hotel_card_title}`}>Ishua Hotel</h3>
-              <Link href="/#" className={style.btn_view}>View More</Link>
+              <Link href="/branch/ishua-hotel" className={style.btn_view}>View More</Link>
             </figcaption>
           </figure>
         </div>
