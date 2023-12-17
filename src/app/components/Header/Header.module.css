@@ -59,6 +59,12 @@
 .nav_item {
   padding-block: 1.5em;
   display: inline-block;
+  background: none;
+  transition: background 500ms ease-in-out;
+}
+
+.nav_item:hover {
+  background: var(--secondary-color);
 }
 
 .nav_link {
