@@ -47,7 +47,7 @@ export default function Header() {
       </div>
       <nav className={style.nav}>
         <div className={style.logo_container}>
-          <Link href="/#" className={style.logo}>
+          <Link href="/" className={style.logo}>
             Datanomics Nigeria
           </Link>
           <button
@@ -69,7 +69,7 @@ export default function Header() {
           )}
         <ul className={`${style.nav_list} ${!open && style.none}`}>
           <li className={style.nav_item}>
-            <Link href="#about" className={style.nav_link}>About</Link>
+            <Link href="/#about" className={style.nav_link}>About</Link>
           </li>
           <li className={style.nav_item}>
             <button type="button" className={style.nav_link}>
