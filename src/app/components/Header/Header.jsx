@@ -2,12 +2,15 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { usePathname, useSearchParams } from 'next/navigation'
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMenu, MdClose} from "react-icons/md";
 
 import style from './Header.module.css';
 
 export default function Header() {
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
   const [fixed, setFixed] = useState(false);
   const [open, setOpen] = useState(false);
   const onToggle = () => setOpen(!open);
@@ -32,6 +35,10 @@ export default function Header() {
     window.addEventListener('scroll', onFixed);
     return () => window.removeEventListener('scroll', onFixed);
   }, []);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname, searchParams]);
   return (
     <header className={`${style.header} ${fixed && style.fixed}`}>
       <div className={style.header_contact}>
@@ -65,9 +72,9 @@ export default function Header() {
             <Link href="#about" className={style.nav_link}>About</Link>
           </li>
           <li className={style.nav_item}>
-            <Link href="#" className={style.nav_link}>
+            <button type="button" className={style.nav_link}>
               Branches
-            </Link>
+            </button>
             <ul className={style.sub_nav_list}>
               <li className={`${style.sub_nav_list_item}`}>
                 <Link href="/branch/datanomics-guesthouse-ogudu" className={style.sub_nav_link}>Ogudu guesthouse</Link>
