@@ -4,6 +4,8 @@ import { PiTelevisionSimpleFill } from "react-icons/pi";
 import { FaSatelliteDish } from "react-icons/fa6";
 import { BiSolidFridge } from "react-icons/bi";
 import { LuAirVent } from "react-icons/lu";
+import { MdLocalBar } from "react-icons/md";
+import { IoMdRestaurant } from "react-icons/io";
 
 import IshuaHotelCorridor from "../../../../public/images/ishua_hotel_corridor.jpg";
 import IshuaHoterlEnviron from "../../../../public/images/ishua_hotel_environ.jpg";
@@ -118,6 +120,14 @@ const branches = [
         icon: <LuAirVent className={style.fill}  />,
         name: "Air Conditioning"
       },
+      {
+        icon: <MdLocalBar className={style.fill} />,
+        name: "Bar",
+      },
+      {
+        icon: <IoMdRestaurant className={style.fill} />,
+        name: "Restaurant"
+      }
     ],
     images: [
       {
@@ -169,6 +179,14 @@ const branches = [
         icon: <LuAirVent className={style.fill}  />,
         name: "Air Conditioning"
       },
+      {
+        icon: <MdLocalBar className={style.fill} />,
+        name: "Bar",
+      },
+      {
+        icon: <IoMdRestaurant className={style.fill} />,
+        name: "Restaurant"
+      }
     ],
     images: [
       {
@@ -217,7 +235,7 @@ const branches = [
         id: 9,
         url: Parliament15,
         caption: '',
-        alt: "parli hotelament"
+        alt: "parliament hotel"
       },
     ]
   },
@@ -256,6 +274,14 @@ const branches = [
         icon: <LuAirVent className={style.fill}  />,
         name: "Air Conditioning"
       },
+      {
+        icon: <MdLocalBar className={style.fill} />,
+        name: "Bar",
+      },
+      {
+        icon: <IoMdRestaurant className={style.fill} />,
+        name: "Restaurant"
+      }
     ],
     images: [
       {
@@ -343,6 +369,14 @@ const branches = [
         icon: <LuAirVent className={style.fill}  />,
         name: "Air Conditioning"
       },
+      {
+        icon: <MdLocalBar className={style.fill} />,
+        name: "Bar",
+      },
+      {
+        icon: <IoMdRestaurant className={style.fill} />,
+        name: "Restaurant"
+      }
     ],
     images: [
       {
