@@ -1,7 +1,5 @@
 "use client";
 
-import { useMemo } from "react";
-import dynamic from "next/dynamic";
 import { MdCircle } from "react-icons/md";
 
 import { branches } from "../lib/branches";
