@@ -15,7 +15,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: 'Datanomics Nigeria',
-  description: 'Cheap hotels in lagos isua akoko ugbeh akoko ondo state akure nigeria',
+  description: 'Cheap hotels in lagos ondo akure isua ishua ugbek akoko parliament hotel ishua hotel ugbeh hotel nigeria',
 };
 
 export default function RootLayout({ children }) {
