@@ -1,11 +1,11 @@
 import { Poppins } from 'next/font/google';
-import Script from 'next/script';
 import './tokens.css';
 import './globals.css';
 import './utilities.css';
 
 import Header from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
+import { GoogleAnalytics } from './components/GoogleAnalytics';
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -15,7 +15,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: 'Datanomics Nigeria',
-  description: 'Cheap hotels in lagos, isua akoko ugbeh akoko ondo state akure',
+  description: 'Cheap hotels in lagos isua akoko ugbeh akoko ondo state akure nigeria',
 };
 
 export default function RootLayout({ children }) {
@@ -25,16 +25,11 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
-        <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID}`} />
-        <Script id="google-analytics">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
- 
-            gtag('config', ${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID});
-          `}
-      </Script>
+        {
+          process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID ? 
+          <GoogleAnalytics id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID} /> :
+          null
+        }
       </body>
     </html>
   );
