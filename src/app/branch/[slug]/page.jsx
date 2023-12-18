@@ -14,13 +14,6 @@ import style from './page.module.css';
 
 export default function Page({ params: { slug } }) {
   const branch = branches.find((branch) => slug === branch.slug);
-  // const Map = useMemo(() => dynamic(
-  //   () => import('../../components/Map/Map'),
-  //   { 
-  //     loading: () => <p>A map is loading</p>,
-  //     ssr: false
-  //   }
-  // ), []);
   return (
     <main>
       <section>
@@ -67,7 +60,6 @@ export default function Page({ params: { slug } }) {
                 </div>
               </div>
             </div>
-            {/* <Map lat={branch.location.lat} lng={branch.location.lng} /> */}
           </div>
         </div>
       </section>
