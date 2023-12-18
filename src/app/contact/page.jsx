@@ -1,6 +1,9 @@
 import { AddressCard } from './components/AddressCard';
 import style from './page.module.css';
 
+export const metadata = {
+  title: "Contact",
+};
 
 export default function Contact() {
   return (

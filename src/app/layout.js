@@ -14,8 +14,24 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: 'Datanomics Nigeria',
+  title: {
+    template: "%s - Datanomics Nigeria",
+    default: "Datanomics Nigeria",
+  },
   description: 'Cheap hotels in lagos ondo akure isua ishua ugbek akoko parliament hotel ishua hotel ugbeh hotel nigeria',
+  keywords: ["hotel", "hotels", "hospitality",],
+  authors: [{ name: "omoogun" }],
+  openGraph: {
+    title: "Datanomics Nigeria",
+    description: 'Cheap hotels in lagos ondo akure isua ishua ugbek akoko parliament hotel ishua hotel ugbeh hotel nigeria',
+    url: 'https://www.datanomicsnigeria.com',
+    siteName: 'Datanomics Nigeria',
+    locale: 'en_US',
+    type: 'website',
+    authors: ["omoogun"]
+  },
+  bookmarks: ['https://www.datanomicsnigeria.com'],
+  category: 'hospitality',
 };
 
 export default function RootLayout({ children }) {
