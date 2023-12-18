@@ -23,7 +23,7 @@ export const metadata = {
   authors: [{ name: "omoogun" }],
   openGraph: {
     title: "Datanomics Nigeria",
-    description: 'Cheap hotels in lagos ondo akure isua ishua ugbek akoko parliament hotel ishua hotel ugbeh hotel nigeria',
+    description: 'Cheap hotels in lagos ondo akure isua ishua ugbeh akoko parliament hotel ishua hotel ugbeh hotel nigeria',
     url: 'https://www.datanomicsnigeria.com',
     siteName: 'Datanomics Nigeria',
     locale: 'en_US',

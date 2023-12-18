@@ -1,5 +1,3 @@
-"use client";
-
 import { MdCircle } from "react-icons/md";
 
 import { branches } from "../lib/branches";
@@ -9,6 +7,23 @@ import { HorizontalLines } from "@/app/components/HorizontalLines/HorizontalLine
 
 import { Map } from "@/app/components/Map/Map";
 import style from './page.module.css';
+
+export async function generateMetadata({ params }, parent) {
+  const slug = params.slug
+ 
+  const branch = branches.find((branch) => slug === branch.slug);
+ 
+  const previousOg = (await parent).openGraph;
+ 
+  return {
+    title: branch.name,
+    openGraph: {
+      ...previousOg,
+      title: `${branch.name} Datanomics Nigeria`,
+      url: `https://www.datanomicsnigeria.com${branch.link}`,
+    },
+  }
+}
 
 export default function Page({ params: { slug } }) {
   const branch = branches.find((branch) => slug === branch.slug);
