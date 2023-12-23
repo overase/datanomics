@@ -37,8 +37,8 @@ export default function Page({ params: { slug } }) {
               <br />
               {branch?.subheading && branch?.subheading}
             </h1>
+            <HorizontalLines />
             <div className={style.branch_body}>
-              <HorizontalLines />
               <div className="container">
                 <div className={style.branch_room_slides}>
                   <ImageSlider slides={branch.images} />
