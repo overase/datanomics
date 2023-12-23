@@ -3,7 +3,7 @@ import './tokens.css';
 import './globals.css';
 import './utilities.css';
 
-import Header from './components/Header/Header';
+import { HeaderWrapper } from './components/Header/HeaderWrapper';
 import { Footer } from './components/Footer/Footer';
 import { GoogleAnalytics } from './components/GoogleAnalytics';
 
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.variable}>
       <body>
-        <Header />
+        <HeaderWrapper />
         {children}
         <Footer />
         {

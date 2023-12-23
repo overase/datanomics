@@ -1,44 +1,11 @@
 "use client";
-
-import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { usePathname, useSearchParams } from 'next/navigation'
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMenu, MdClose} from "react-icons/md";
 
 import style from './Header.module.css';
 
-export default function Header() {
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
-  const [fixed, setFixed] = useState(false);
-  const [open, setOpen] = useState(false);
-  const onToggle = () => setOpen(!open);
-  const onFixed = () => {
-    if (window !== undefined) {
-      let windowHeight = window.scrollY;
-      windowHeight > 50 ? setFixed(true) : setFixed(false);
-    }
-  }
-
-  useEffect(() => {
-    window
-    .matchMedia("(min-width: 768px)")
-    .addEventListener('change', e => {
-      if (e.matches && open) {
-        setOpen(false);
-      }
-    });
-  }, [open]);
-
-  useEffect(() => {
-    window.addEventListener('scroll', onFixed);
-    return () => window.removeEventListener('scroll', onFixed);
-  }, []);
-
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname, searchParams]);
+function Header({ fixed, open, onToggle }) {
   return (
     <header className={`${style.header} ${fixed && style.fixed}`}>
       <div className={style.header_contact}>
@@ -104,3 +71,5 @@ export default function Header() {
     </header>
   );
 }
+
+export { Header };
