@@ -1,17 +1,12 @@
-import { Poppins } from 'next/font/google';
 import './tokens.css';
 import './globals.css';
 import './utilities.css';
 
+import { poppins } from './ui/fonts';
+
 import { HeaderWrapper } from './components/Header/HeaderWrapper';
 import { Footer } from './components/Footer/Footer';
 import { GoogleAnalytics } from './components/GoogleAnalytics';
-
-const poppins = Poppins({
-  variable: '--font-poppins',
-  subsets: ['latin'],
-  weight: ['300', '700']
-});
 
 export const metadata = {
   title: {
