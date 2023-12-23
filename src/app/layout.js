@@ -1,6 +1,6 @@
-import './tokens.css';
-import './globals.css';
-import './utilities.css';
+import './ui/tokens.css';
+import './ui/utilities.css';
+import './ui/globals.css';
 
 import { poppins } from './ui/fonts';
 
@@ -31,8 +31,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={poppins.variable}>
-      <body>
+    <html lang="en">
+      <body className={poppins.variable}>
         <HeaderWrapper />
         {children}
         <Footer />
