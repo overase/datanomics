@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import './ui/tokens.css';
 import './ui/utilities.css';
 import './ui/globals.css';
