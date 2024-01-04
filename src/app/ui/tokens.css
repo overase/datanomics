@@ -1,5 +1,9 @@
 :root {
-  --font: var(--font-poppins);
+  --logo-font: var(--font-lora);
+  --heading-font: var(--font-hiragino);
+  --gilroy-medium-font: var(--font-gilroy-medium);
+  --gilroy-regular-font: var(--font-gilroy-regular);
+  --gilroy-bold-font: var(--font-gilroy-bold);
   --default-font-weight: 400;
   --logo-font-color: #fff;
   --white-color: #fff;
