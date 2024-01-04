@@ -8,7 +8,7 @@ import { lora, hiragino, gilroyBold, gilroyMedium, gilroyRegular } from './ui/fo
 
 import { HeaderWrapper } from './components/Header/HeaderWrapper';
 import { Footer } from './components/Footer/Footer';
-import { GoogleAnalytics } from './components/GoogleAnalytics';
+import { GoogleAnalytics } from './scripts/GoogleAnalytics';
 
 export const metadata = {
   title: {
