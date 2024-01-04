@@ -33,6 +33,8 @@
 .logo {
   font-size: 2em;
   color: var(--logo-font-color);
+  font-family: var(--logo-font);
+  font-weight: 700;
 }
 
 .close {

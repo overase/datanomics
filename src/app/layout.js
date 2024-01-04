@@ -4,7 +4,7 @@ import './ui/tokens.css';
 import './ui/utilities.css';
 import './ui/globals.css';
 
-import { poppins } from './ui/fonts';
+import { lora, hiragino, gilroyBold, gilroyMedium, gilroyRegular } from './ui/fonts/fonts';
 
 import { HeaderWrapper } from './components/Header/HeaderWrapper';
 import { Footer } from './components/Footer/Footer';
@@ -34,7 +34,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.variable}>
+      <body className={
+        `${lora.variable} ${hiragino.variable} ${gilroyBold.variable} ${gilroyRegular.variable} ${gilroyMedium.variable}`
+        }>
         <HeaderWrapper />
         {children}
         <Footer />
