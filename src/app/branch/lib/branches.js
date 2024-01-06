@@ -146,7 +146,8 @@ const branches = [
   },
   {
     id: 3,
-    name: "Parliament Hotel",
+    name: "Parliament",
+    type: "Hotel",
     slug: "parliament-hotel",
     rooms: ["Single", "Executive VIP", "Governor suite", "Royal suite"],
     link: "/branch/parliament-hotel",
@@ -241,7 +242,8 @@ const branches = [
   },
   {
     id: 4,
-    name: "Ishua Hotel",
+    name: "Ishua",
+    type: "Hotel",
     slug: "ishua-hotel",
     link: "/branch/ishua-hotel",
     rooms: ["Single", "Standard", "Executive", "VIP", "Royal suite 1", "Royal suite 2"],
@@ -336,7 +338,8 @@ const branches = [
   },
   {
     id: 5,
-    name: "Ugbeh Hotel",
+    name: "Ugbeh",
+    type: "Hotel",
     slug: "ugbeh-hotel",
     rooms: ["Standard", "Executive vip"],
     link: "/branch/ugbeh-hotel",

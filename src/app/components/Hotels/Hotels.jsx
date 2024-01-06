@@ -6,7 +6,7 @@ import style from "./Hotels.module.css";
 const Hotels = () => {
   return (
     <section className={style.hotels}>
-      <h1 className={`h1 text-center`}>Popular Destinations</h1>
+      <h1 className={`h1 text-center`}><span className="text-gold">POPULAR</span> <span className="text-secondary">DESTINATIONS</span></h1>
       <HorizontalLines />
       <div className="container">
         <div className={style.hotel_content}>

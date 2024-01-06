@@ -33,9 +33,11 @@ export default function Page({ params: { slug } }) {
         <div className="container">
           <div className={style.branch_content}>
             <h1 className={`h1 ${style.branch_title}`}>
-              {branch.name}
+              <span className={style.branch_title_name}>{branch.name}</span>
+              {` `}
+              {branch?.type && <span className={style.branch_title_type}>{branch.type}</span>}
               <br />
-              {branch?.subheading && branch?.subheading}
+              {branch?.subheading && <span className={style.branch_title_subheading}>{branch.subheading}</span>}
             </h1>
             <HorizontalLines />
             <div className={style.branch_body}>

@@ -24,7 +24,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--gold-color);
   display: grid;
   place-items: center;
   margin-bottom: 1em;
@@ -33,7 +33,7 @@
 }
 
 .light_icon {
-  color: var(--secondary-color);
+  color: var(--gold-color);
 }
 
 .fill_icon {
@@ -45,7 +45,7 @@
 }
 
 .icon_container:hover {
-  background: var(--secondary-color);
+  background: var(--gold-color);
 }
 
 .icon_container:hover .light_icon {
@@ -57,7 +57,7 @@
   opacity: 1;
   visibility: visible;
   transform: translateX(0%);
-  color: var(--white-color);
+  color: var(--black-color);
 }
 
 .description {
@@ -75,7 +75,7 @@
 
 @media (hover: hover) and (pointer: fine) {
   .icon_container:hover {
-    background: var(--secondary-color);
+    background: var(--gold-color);
   }
 
   .icon_container:hover .light_icon {
@@ -84,6 +84,6 @@
     
   .icon_container:hover .fill_icon {
     display: block;
-    color: var(--white-color);
+    color: var(--black-color);
   }
 }
