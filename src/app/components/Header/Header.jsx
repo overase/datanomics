@@ -5,9 +5,9 @@ import { MdMenu, MdClose} from "react-icons/md";
 
 import style from './Header.module.css';
 
-function Header({ fixed, open, onToggle }) {
+function Header({ fixed, open, onToggle, whiteBackground }) {
   return (
-    <header className={`${style.header} ${fixed && style.fixed}`}>
+    <header className={`${whiteBackground && style.bg_white} ${style.header} ${fixed && style.fixed}`}>
       <div className={style.header_contact}>
         <span><FaPhoneAlt />{'  '}08033323907</span> {'  '}
         <span>booking@datanomicsnigeria.com</span>
@@ -22,7 +22,7 @@ function Header({ fixed, open, onToggle }) {
             className={style.menu}
             onClick={onToggle}
           >
-            <MdMenu size={30} />
+            <MdMenu size={30} className={`${whiteBackground && 'text-white'}`} />
           </button>
         </div>
         {open && (
@@ -31,11 +31,11 @@ function Header({ fixed, open, onToggle }) {
               className={style.close}
               onClick={onToggle}
             >
-              <MdClose size={30} />
+              <MdClose size={30} className={`${whiteBackground && 'text-white'}`}  />
             </button>
           )}
         <ul className={`${style.nav_list} ${!open && style.none}`}>
-          <li className={style.nav_item}>
+          <li className={`${style.nav_item}`}>
             <Link href="/#about" className={style.nav_link}>About</Link>
           </li>
           <li className={style.nav_item}>

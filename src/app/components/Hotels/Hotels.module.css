@@ -46,7 +46,7 @@
   transform: translate(0, 260px);
   transition: opacity 0.4s, transform 0.4s;
   transition-delay: 0.45s;
-  border-bottom: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--gold-color);
   font-size: 24px;
   font-weight: 600;
 }
@@ -59,7 +59,7 @@
   transition: opacity 0.3s, transform 0.3s;
   text-transform: uppercase;
   font-size: 1.3em;
-  color: var(--secondary-color);
+  color: var(--gold-color);
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: 600;

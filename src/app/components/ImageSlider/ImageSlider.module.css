@@ -12,7 +12,7 @@
   position: absolute;
   cursor: pointer;
   user-select: none;
-  color: var(--secondary-color);
+  color: var(--gold-color);
 }
 
 .prev {
@@ -65,7 +65,7 @@
 .slide_dot {
   height: 12px;
   width: 12px;
-  background-color: var(--secondary-color);
+  background-color: var(--gold-color);
   border-radius: 6px;
   cursor: pointer;
   margin: 0 10px;
@@ -79,7 +79,6 @@
 
 @media  screen and (min-width: 768px) {
   .slides {
-    /* height: 80vh; */
     height: 100%;
   }
 }

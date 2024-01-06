@@ -1,12 +1,13 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname, useSearchParams, useSelectedLayoutSegments } from 'next/navigation';
 import { Header } from './Header';
 
-function HeaderWrapper() {
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
+function HeaderWrapper({ whiteBackground = false }) {
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const selectedSegments = useSelectedLayoutSegments();
   const [fixed, setFixed] = useState(false);
   const [open, setOpen] = useState(false);
   const onToggle = () => setOpen(!open);
@@ -36,7 +37,12 @@ function HeaderWrapper() {
     setOpen(false);
   }, [pathname, searchParams]);
   return (
-    <Header fixed={fixed} open={open} onToggle={onToggle} />
+    <Header
+      fixed={fixed}
+      open={open}
+      onToggle={onToggle}
+      whiteBackground= {(selectedSegments.includes("branch") || selectedSegments.includes("contact")) && true}
+    />
   );
 };
 

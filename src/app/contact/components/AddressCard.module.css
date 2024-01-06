@@ -1,5 +1,5 @@
 .address_heading {
-  color: var(--secondary-color);
+  color: var(--gold-color);
   font-size: 3em;
   letter-spacing: 5px;
   margin-bottom: 0.8em;
@@ -11,7 +11,7 @@
 }
 
 .icon {
-  color: var(--secondary-color);
+  color: var(--gold-color);
   font-size: 3em;
   margin-right: 0.5em;
 }

@@ -28,7 +28,7 @@ export async function generateMetadata({ params }, parent) {
 export default function Page({ params: { slug } }) {
   const branch = branches.find((branch) => slug === branch.slug);
   return (
-    <main>
+    <main className={style.branch_main}>
       <section>
         <div className="container">
           <div className={style.branch_content}>
