@@ -42,13 +42,13 @@ const slides = [
 
 export default function Home() {
   return (
-    <main>
+    <>
       <section className={style.carousel}>
         <ImageSlider slides={slides} />
       </section>
       <About />
       <Hotels />
       <WhyUs />
-    </main>
+    </>
   );
 }

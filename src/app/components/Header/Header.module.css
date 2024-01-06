@@ -1,12 +1,29 @@
 .header {
   font-family: var(--font);
   font-weight: 500;
-  background: var(--header-bg-color);
+  background: transparent;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .header_contact {
   display: none;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--header-bg-color);
+}
+
+.header.fixed {
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.4);
 }
 
 .nav {
@@ -31,10 +48,11 @@
 }
 
 .logo {
-  font-size: 2em;
+  font-size: 2.5em;
   color: var(--logo-font-color);
   font-family: var(--logo-font);
   font-weight: 700;
+  line-height: 40px;
 }
 
 .close {
@@ -74,6 +92,7 @@
   font-size: 1.5em;
   font-weight: 600;
   display: block;
+  font-family: var(--gilroy-medium-font);
 }
 
 .sub_nav_list {
@@ -141,22 +160,11 @@
     display: none;
   }
 
-  .fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-
   .header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .header.fixed {
-    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.4);
+    width: 100%;
   }
   
   .header_contact {
@@ -182,6 +190,7 @@
     height: 50px;
     flex-direction: row;
     align-items: center;
+    padding-inline: 3em;
   }
 
   .nav_list {
@@ -228,6 +237,10 @@
 @media only screen and (min-width: 991px) {
   .menu {
     display: none;
+  }
+
+  .nav {
+    padding-inline: 6em;
   }
 }
 
