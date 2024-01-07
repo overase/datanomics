@@ -1,14 +1,14 @@
 export const runtime = "edge";
 
-import './ui/tokens.css';
-import './ui/utilities.css';
-import './ui/globals.css';
+import './_ui/tokens.css';
+import './_ui/utilities.css';
+import './_ui/globals.css';
 
-import { lora, hiragino, gilroyBold, gilroyMedium, gilroyRegular } from './ui/fonts/fonts';
+import { lora, hiragino, gilroyBold, gilroyMedium, gilroyRegular } from './_ui/fonts/fonts';
 
-import { HeaderWrapper } from './components/Header/HeaderWrapper';
-import { Footer } from './components/Footer/Footer';
-import { GoogleAnalytics } from './scripts/GoogleAnalytics';
+import { HeaderWrapper } from './_components/Header/HeaderWrapper';
+import { Footer } from './_components/Footer/Footer';
+import { GoogleAnalytics } from './_scripts/GoogleAnalytics';
 
 export const metadata = {
   title: {

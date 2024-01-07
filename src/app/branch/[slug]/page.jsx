@@ -2,10 +2,10 @@ import { MdCircle } from "react-icons/md";
 
 import { branches } from "../lib/branches";
 
-import { ImageSlider } from "@/app/components/ImageSlider/ImageSlider";
-import { HorizontalLines } from "@/app/components/HorizontalLines/HorizontalLines";
+import { ImageSlider } from "@/app/_components/ImageSlider/ImageSlider";
+import { HorizontalLines } from "@/app/_components/HorizontalLines/HorizontalLines";
 
-import { Map } from "@/app/components/Map/Map";
+import { Map } from "@/app/_components/Map/Map";
 import style from './page.module.css';
 
 export async function generateMetadata({ params }, parent) {

@@ -1,7 +1,7 @@
-import { ImageSlider } from './components/ImageSlider/ImageSlider';
-import { Hotels } from './components/Hotels/Hotels';
-import { WhyUs } from './components/WhyUs/WhyUs';
-import { About } from './components/About/About';
+import { ImageSlider } from './_components/ImageSlider/ImageSlider';
+import { Hotels } from './_components/Hotels/Hotels';
+import { WhyUs } from './_components/WhyUs/WhyUs';
+import { About } from './_components/About/About';
 
 
 import Ishua from "../../public/images/ishua_standard_room_2.jpg";
