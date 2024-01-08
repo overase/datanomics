@@ -37,7 +37,7 @@ function Header({ fixed, open, onToggle, whiteBackground }) {
               </button>
             )
             }
-          <ul className={`${style.nav_list} ${!open && style.none}`}>
+          <ul className={`${style.nav_list} ${open && style.nav_list_mobile}`}>
             <li className={`${style.nav_item}`}>
               <Link href="/#about" className={style.nav_link}>About</Link>
             </li>
