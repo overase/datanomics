@@ -214,6 +214,7 @@
     color: var(--white-color);
     font-weight: 900;
     padding-inline: 6em;
+    gap: 0.8em;
   }
 
   .phone {
