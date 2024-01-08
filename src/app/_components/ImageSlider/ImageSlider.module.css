@@ -43,13 +43,13 @@
 }
 
 .slide_caption {
-  font-size: 2.5em;
+  font-size: 4em;
   position: absolute;
-  bottom: 50%;
+  top: 50%;
   right: 10%;
   color: var(--white-color);
   transform: translate(0, -50%);
-  width: 120px;
+  width: 200px;
   line-height: 1.2;
 }
 
