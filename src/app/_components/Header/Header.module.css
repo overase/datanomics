@@ -194,6 +194,10 @@
   width: 50%;
 }
 
+.bg_white .nav .logo_container .menu {
+  color: var(--black-color);
+}
+
 
 
 @media only screen and (min-width: 768px) {
