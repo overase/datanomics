@@ -17,15 +17,8 @@ function Header({ fixed, open, onToggle, whiteBackground }) {
             <Link href="/" className={style.logo}>
               Datanomics Nigeria
             </Link>
-            <button
-              type="button"
-              className={style.menu}
-              onClick={onToggle}
-            >
-              <MdMenu size={30} />
-            </button>
           </div>
-          {open && (
+          {open ? (
               <button
                 type="button"
                 className={style.close}
@@ -33,7 +26,17 @@ function Header({ fixed, open, onToggle, whiteBackground }) {
               >
                 <MdClose size={30} />
               </button>
-            )}
+            ): 
+            (
+              <button
+                type="button"
+                className={style.menu}
+                onClick={onToggle}
+              >
+                <MdMenu size={30} />
+              </button>
+            )
+            }
           <ul className={`${style.nav_list} ${!open && style.none}`}>
             <li className={`${style.nav_item}`}>
               <Link href="/#about" className={style.nav_link}>About</Link>
