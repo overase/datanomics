@@ -33,6 +33,7 @@
   justify-content: center;
   gap: 1.5em;
   height: 100%;
+  padding: 2em;
 }
 
 .logo_container {
@@ -192,6 +193,8 @@
 .bg_white .nav .nav_link:hover::after{
   width: 50%;
 }
+
+
 
 @media only screen and (min-width: 768px) {
   .menu,

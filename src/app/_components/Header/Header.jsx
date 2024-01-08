@@ -22,7 +22,7 @@ function Header({ fixed, open, onToggle, whiteBackground }) {
               className={style.menu}
               onClick={onToggle}
             >
-              <MdMenu size={30} className={`${whiteBackground && 'text-white'}`} />
+              <MdMenu size={30} />
             </button>
           </div>
           {open && (
@@ -31,7 +31,7 @@ function Header({ fixed, open, onToggle, whiteBackground }) {
                 className={style.close}
                 onClick={onToggle}
               >
-                <MdClose size={30} className={`${whiteBackground && 'text-white'}`}  />
+                <MdClose size={30} />
               </button>
             )}
           <ul className={`${style.nav_list} ${!open && style.none}`}>
