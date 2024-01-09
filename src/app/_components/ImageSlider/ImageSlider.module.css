@@ -43,14 +43,15 @@
 }
 
 .slide_caption {
-  font-size: 4em;
+  font-size: 3em;
   position: absolute;
-  top: 50%;
-  right: 10%;
   color: var(--white-color);
-  transform: translate(0, -50%);
-  width: 200px;
+  top: 70%;
+  left: 10%;
+  transform: translate(0, -70%);
+  width: 100%;
   line-height: 1.2;
+  font-weight: 800;
 }
 
 .slides_dot {
@@ -80,6 +81,16 @@
 @media  screen and (min-width: 768px) {
   .slides {
     height: 100%;
+  }
+
+  .slide_caption {
+    font-size: 4em;
+    top: 50%;
+    left: initial;
+    right: 10%;
+    width: 200px;
+    font-weight: 500;
+    transform: translate(0, -50%);
   }
 }
 
