@@ -90,11 +90,27 @@
   display: block;
   font-family: var(--gilroy-medium-font);
   position: relative;
-  transition: color 500ms ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    var(--gold-color),
+    var(--gold-color) 50%,
+    white 50%
+  );
+}
+
+.bg_link {
+  opacity: 0.8;
+  background-size: 200% 100%;
+  background-position: -100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 500ms ease-in-out, opacity 500ms ease-in-out;
 }
 
 .nav_link:hover {
-  color: var(--gold-color);
+  opacity: 1;
+  background-position: 0;
 }
 
 .nav_link::after {
@@ -175,14 +191,23 @@
   animation: fadeOut ease-in-out 0.5s forwards;
 }
 
-.bg_white .nav .logo_container .logo,
-.bg_white .nav .nav_link {
+.bg_white .nav .logo_container .logo {
   color: var(--black-color);
 }
 
-.bg_white.fixed .logo_container .logo,
-.bg_white.fixed .nav .nav_link {
-  color: var(--white-color);
+.bg_white .nav .nav_link {
+  color: var(--black-color);
+  background-image: linear-gradient(
+    to right,
+    var(--gold-color),
+    var(--gold-color) 50%,
+    #424242 50%
+  );
+}
+
+.bg_white .nav .nav_link:hover {
+  opacity: 1;
+  background-position: 0;
 }
 
 .bg_white .nav .nav_link:hover {
@@ -190,7 +215,7 @@
 }
 
 .bg_white .nav .nav_link:hover::after{
-  width: 50%;
+  width: 100%;
 }
 
 .bg_white .nav .menu,
@@ -198,8 +223,42 @@
   color: var(--black-color);
 }
 
+.bg_white.fixed .logo_container .logo {
+  color: var(--white-color);
+}
+
+.bg_white.fixed .nav .nav_link {
+  color: var(--white-color);
+  background-image: linear-gradient(
+    to right,
+    var(--gold-color),
+    var(--gold-color) 50%,
+    white 50%
+  );
+}
+
+.bg_white.fixed .nav .nav_link:hover {
+  opacity: 1;
+  background-position: 0;
+}
+
 .nav_list_mobile .nav_item .nav_link {
   color: var(--white-color);
+  background-image: linear-gradient(
+    to right,
+    var(--gold-color),
+    var(--gold-color) 50%,
+    white 50%
+  );
+}
+
+.nav_list_mobile .nav_item .nav_link:hover:after {
+  width: 50%;
+}
+
+.nav_list .nav_item .nav_link:hover {
+  background-position: 0;
+  opacity: 1;
 }
 
 @media only screen and (min-width: 768px) {

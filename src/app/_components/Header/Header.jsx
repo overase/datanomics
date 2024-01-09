@@ -39,10 +39,10 @@ function Header({ fixed, open, onToggle, whiteBackground }) {
             }
           <ul className={`${style.nav_list} ${open && style.nav_list_mobile}`}>
             <li className={`${style.nav_item}`}>
-              <Link href="/#about" className={style.nav_link}>About</Link>
+              <Link href="/#about" className={`${style.nav_link} ${style.bg_link}`}>About</Link>
             </li>
             <li className={style.nav_item}>
-              <button type="button" className={style.nav_link}>
+              <button type="button" className={`${style.nav_link} ${style.bg_link}`}>
                 Branches
               </button>
               <ul className={style.sub_nav_list}>
@@ -64,7 +64,7 @@ function Header({ fixed, open, onToggle, whiteBackground }) {
               </ul>
             </li>
             <li className={style.nav_item}>
-              <Link href="/contact" className={style.nav_link}>Contact</Link>
+              <Link href="/contact" className={`${style.nav_link} ${style.bg_link}`}>Contact</Link>
             </li>
             <li className={`${style.nav_item} ${style.phone_block}`}>
               <p className={style.phone}>Phone: 08033323907 </p>
