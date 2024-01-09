@@ -118,6 +118,8 @@ h6 {
   gap: 4em;
 }
 
+/* TEXT COLOR */
+
 .text-white {
   color: var(--white-color);
 }
@@ -130,6 +132,7 @@ h6 {
   color: var(--black-color);
 }
 
+/* TEXT SIZE */
 
 .text-md {
   font-size: 1.8em;
@@ -137,6 +140,12 @@ h6 {
 
 .text-center {
   text-align: center;
+}
+
+/* ICON */
+
+.icon-white {
+  color: var(--white-color);
 }
 
 @media screen and (min-width: 900px) {

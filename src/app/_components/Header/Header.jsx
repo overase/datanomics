@@ -21,7 +21,7 @@ function Header({ fixed, open, onToggle, whiteBackground }) {
           {open ? (
               <button
                 type="button"
-                className={style.close}
+                className={`icon icon-white ${style.close}`}
                 onClick={onToggle}
               >
                 <MdClose size={30} />
@@ -30,7 +30,7 @@ function Header({ fixed, open, onToggle, whiteBackground }) {
             (
               <button
                 type="button"
-                className={style.menu}
+                className={`icon icon-white ${style.menu}`}
                 onClick={onToggle}
               >
                 <MdMenu size={30} />

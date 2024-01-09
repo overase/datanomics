@@ -1,4 +1,5 @@
 .header {
+  --navbar-height: 4em;
   font-weight: 500;
   background: transparent;
   width: 100%;
@@ -15,7 +16,6 @@
   align-items: center;
   position: relative;
   padding: 0.8em 2em;
-  color: var(--white-color);
   font-weight: 900;
   gap: 0.8em;
 }
@@ -50,14 +50,6 @@
   padding-left: 2em;
 }
 
-.menu {
-  color: var(--white-color);
-}
-
-.close {
-  color: var(--white-color);
-}
-
 .logo {
   font-size: 2.5em;
   color: var(--logo-font-color);
@@ -79,7 +71,7 @@
   z-index: 20;
   position: absolute;
   top: 4em;
-  height: calc(100vh - 4em);
+  height: calc(100vh - var(--navbar-height));
   animation: fadeIn 0.5s ease-in-out forwards;
 }
 
@@ -201,10 +193,7 @@
   width: 50%;
 }
 
-.bg_white .nav .menu {
-  color: var(--black-color);
-}
-
+.bg_white .nav .menu,
 .bg_white .nav .close {
   color: var(--black-color);
 }
