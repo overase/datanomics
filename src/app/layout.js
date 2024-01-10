@@ -9,6 +9,7 @@ import { lora, hiragino, gilroyBold, gilroyMedium, gilroyRegular } from './_ui/f
 import { HeaderWrapper } from './_components/Header/HeaderWrapper';
 import { Footer } from './_components/Footer/Footer';
 import { GoogleAnalytics } from './_scripts/GoogleAnalytics';
+import { CloudFlareAnalytics } from './_scripts/CloudFlareAnalytics';
 
 export const metadata = {
   title: {
@@ -43,6 +44,11 @@ export default function RootLayout({ children }) {
         {
           process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID ? 
           <GoogleAnalytics id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID} /> :
+          null
+        }
+        {
+          process.env.NEXT_PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN ? 
+          <CloudFlareAnalytics token={process.env.NEXT_PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN} /> :
           null
         }
       </body>
