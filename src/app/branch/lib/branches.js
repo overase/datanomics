@@ -1,11 +1,13 @@
-import { AiFillBulb } from "react-icons/ai";
-import { BiSolidCctv } from "react-icons/bi";
-import { PiTelevisionSimpleFill } from "react-icons/pi";
-import { FaSatelliteDish } from "react-icons/fa6";
-import { BiSolidFridge } from "react-icons/bi";
-import { LuAirVent } from "react-icons/lu";
-import { MdLocalBar } from "react-icons/md";
-import { IoMdRestaurant } from "react-icons/io";
+import {
+  AiFillBulb,
+  BiSolidCctv,
+  PiTelevisionSimpleFill,
+  FaSatelliteDish,
+  BiSolidFridge,
+  LuAirVent,
+  MdLocalBar,
+  IoMdRestaurant
+} from "@/app/_ui/icons/icons";
 
 import IshuaHotelCorridor from "../../../../public/images/ishua_hotel_corridor.jpg";
 import IshuaHoterlEnviron from "../../../../public/images/ishua_hotel_environ.jpg";

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
+import { FaChevronCircleLeft, FaChevronCircleRight } from "@/app/_ui/icons/icons";
 
 import style from './ImageSlider.module.css';
 
