@@ -1,6 +1,8 @@
-import { FaLocationDot } from "react-icons/fa6";
-import { FaPhoneAlt } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import {
+  FaLocationDot,
+  FaPhoneAlt,
+  MdEmail
+} from "@/app/_ui/icons/icons";
 
 import style from './AddressCard.module.css';
 
