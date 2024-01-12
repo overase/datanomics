@@ -82,19 +82,19 @@ h6 {
 }
 
 .h1 {
-  font-size: 5.5em;
-}
-
-.h2 {
-  font-size: 4.5em;
-}
-
-.h3 {
   font-size: 3.5em;
 }
 
-.h4 {
+.h2 {
+  font-size: 3em;
+}
+
+.h3 {
   font-size: 2.5em;
+}
+
+.h4 {
+  font-size: 2em;
 }
 
 /* HEADING */
@@ -148,7 +148,7 @@ h6 {
   color: var(--white-color);
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
   .flex-md-row {
     display: flex;
     flex-direction: row;
@@ -158,6 +158,22 @@ h6 {
 @media screen and (min-width: 991px) {
   .col {
     width: 40%;
+  }
+
+  .h1 {
+    font-size: 5.5em;
+  }
+  
+  .h2 {
+    font-size: 4.5em;
+  }
+  
+  .h3 {
+    font-size: 3.5em;
+  }
+  
+  .h4 {
+    font-size: 2.5em;
   }
 }
 
