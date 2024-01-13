@@ -4,6 +4,9 @@
 }
 
 .hotel_content {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
 .hotel_card {
@@ -80,9 +83,8 @@
 
 @media screen and (min-width: 767px) {
   .hotel_content {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 2em;
   }
 
   .hotel_card {

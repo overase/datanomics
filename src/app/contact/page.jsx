@@ -1,4 +1,4 @@
-import { AddressCard } from './components/AddressCard';
+import { AddressCard } from './_components/AddressCard';
 import style from './page.module.css';
 
 export const metadata = {

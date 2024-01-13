@@ -82,19 +82,19 @@ h6 {
 }
 
 .h1 {
-  font-size: 5.5em;
-}
-
-.h2 {
-  font-size: 4.5em;
-}
-
-.h3 {
   font-size: 3.5em;
 }
 
-.h4 {
+.h2 {
+  font-size: 3em;
+}
+
+.h3 {
   font-size: 2.5em;
+}
+
+.h4 {
+  font-size: 2em;
 }
 
 /* HEADING */
@@ -118,6 +118,8 @@ h6 {
   gap: 4em;
 }
 
+/* TEXT COLOR */
+
 .text-white {
   color: var(--white-color);
 }
@@ -130,6 +132,7 @@ h6 {
   color: var(--black-color);
 }
 
+/* TEXT SIZE */
 
 .text-md {
   font-size: 1.8em;
@@ -139,7 +142,13 @@ h6 {
   text-align: center;
 }
 
-@media screen and (min-width: 900px) {
+/* ICON */
+
+.icon-white {
+  color: var(--white-color);
+}
+
+@media screen and (min-width: 768px) {
   .flex-md-row {
     display: flex;
     flex-direction: row;
@@ -149,6 +158,22 @@ h6 {
 @media screen and (min-width: 991px) {
   .col {
     width: 40%;
+  }
+
+  .h1 {
+    font-size: 5.5em;
+  }
+  
+  .h2 {
+    font-size: 4.5em;
+  }
+  
+  .h3 {
+    font-size: 3.5em;
+  }
+  
+  .h4 {
+    font-size: 2.5em;
   }
 }
 

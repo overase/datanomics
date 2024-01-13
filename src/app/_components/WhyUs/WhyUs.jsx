@@ -1,6 +1,11 @@
-import { PiCameraPlusFill, PiCameraPlusLight } from "react-icons/pi";
-import { IoRestaurantOutline, IoRestaurant } from "react-icons/io5";
-import { BsLightbulbFill, BsLightbulb } from "react-icons/bs";
+import {
+  PiCameraPlusFill,
+  PiCameraPlusLight,
+  IoRestaurantOutline,
+  IoRestaurant,
+  BsLightbulbFill,
+  BsLightbulb
+} from "@/app/_ui/icons/icons";
 
 import { HorizontalLines } from "../HorizontalLines/HorizontalLines";
 

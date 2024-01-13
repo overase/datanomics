@@ -1,33 +1,13 @@
-import { AiFillBulb } from "react-icons/ai";
-import { BiSolidCctv } from "react-icons/bi";
-import { PiTelevisionSimpleFill } from "react-icons/pi";
-import { FaSatelliteDish } from "react-icons/fa6";
-import { BiSolidFridge } from "react-icons/bi";
-import { LuAirVent } from "react-icons/lu";
-import { MdLocalBar } from "react-icons/md";
-import { IoMdRestaurant } from "react-icons/io";
-
-import IshuaHotelCorridor from "../../../../public/images/ishua_hotel_corridor.jpg";
-import IshuaHoterlEnviron from "../../../../public/images/ishua_hotel_environ.jpg";
-import IshuaRoom2 from "../../../../public/images/ishua_room_2.jpg";
-import IshuaRoom4 from "../../../../public/images/ishua_room_4.jpg";
-import IshuaRoyalSuite1 from "../../../../public/images/ishua_royal_suite_1.jpg";
-import IshuaRoyalSuite2 from "../../../../public/images/ishua_royal_suite_2.jpg";
-import IshuaStandardRoom from "../../../../public/images/ishua_standard_room_2.jpg";
-import IshuaVip from "../../../../public/images/ishua_vip.jpg";
-import Parliament1 from "../../../../public/images/parliament_1.jpg";
-import Parliament4 from "../../../../public/images/parliament_4.jpg";
-import Parliament5 from "../../../../public/images/parliament_5.jpg";
-import Parliament6 from "../../../../public/images/parliament_6.jpg";
-import Parliament10 from "../../../../public/images/parliament_10.jpg";
-import Parliament12 from "../../../../public/images/parliament_12.jpg";
-import Parliament11 from "../../../../public/images/parliament_11.jpg";
-import Parliament15 from "../../../../public/images/parliament_room_15.jpg";
-import Onipanu1 from "../../../../public/images/datanomic_onipanu_room.jpg";
-import Onipanu2 from "../../../../public/images/parliament_hotel_room.jpg";
-import Ugbeh from "../../../../public/images/ugbeh_1.jpg";
-import Ogudu1 from "../../../../public/images/ogudu_hotel.jpg";
-import OguduRoom from "../../../../public/images/ogudu_room.jpg";
+import {
+  AiFillBulb,
+  BiSolidCctv,
+  PiTelevisionSimpleFill,
+  FaSatelliteDish,
+  BiSolidFridge,
+  LuAirVent,
+  MdLocalBar,
+  IoMdRestaurant
+} from "@/app/_ui/icons/icons";
 
 import style from "../[slug]/page.module.css";
 
@@ -72,13 +52,13 @@ const branches = [
     images: [
       {
         id: 1,
-        url: Ogudu1,
+        url: "ogudu_hotel.jpg",
         caption: '',
         alt: "ogudu hotel"
       },
       {
         id: 2,
-        url: OguduRoom,
+        url: "ogudu_room.jpg",
         caption: '',
         alt: "ogudu hotel"
       }
@@ -132,13 +112,13 @@ const branches = [
     images: [
       {
         id: 1,
-        url: Onipanu1,
+        url: "datanomic_onipanu_room.jpg",
         caption: '',
         alt: "onipa hotelnu"
       },
       {
         id: 2,
-        url: Onipanu2,
+        url: "parliament_hotel_room.jpg",
         caption: '',
         alt: "onipa hotelnu"
       },
@@ -192,49 +172,49 @@ const branches = [
     images: [
       {
         id: 1,
-        url: Parliament1,
+        url: "parliament_1.jpg",
         caption: '',
         alt: "parli hotelament"
       },
       {
         id: 3,
-        url: Parliament4,
+        url: "parliament_4.jpg",
         caption: '',
         alt: "parli hotelament"
       },
       {
         id: 4,
-        url: Parliament5,
+        url: "parliament_5.jpg",
         caption: '',
         alt: "parli hotelament"
       },
       {
         id: 5,
-        url: Parliament6,
+        url: "parliament_6.jpg",
         caption: '',
         alt: "parli hotelament"
       },
       {
         id: 6,
-        url: Parliament10,
+        url: "parliament_10.jpg",
         caption: '',
         alt: "parli hotelament"
       },
       {
         id: 7,
-        url: Parliament11,
+        url: "parliament_11.jpg",
         caption: '',
         alt: "parli hotelament"
       },
       {
         id: 8,
-        url: Parliament12,
+        url: "parliament_12.jpg",
         caption: '',
         alt: "parli hotelament"
       },
       {
         id: 9,
-        url: Parliament15,
+        url: "parliament_15.jpg",
         caption: '',
         alt: "parliament hotel"
       },
@@ -288,49 +268,49 @@ const branches = [
     images: [
       {
         id: 1,
-        url: IshuaStandardRoom,
+        url: "ishua_standard_room_2.jpg",
         caption: '',
         alt: "ishua hotel"
       },
       {
         id: 2,
-        url: IshuaHoterlEnviron,
+        url: "ishua_hotel_environ.jpg",
         caption: '',
         alt: "ishua hotel"
       },
       {
         id: 3,
-        url: IshuaRoom2,
+        url: "ishua_room_2.jpg",
         caption: '',
         alt: "ishua hotel"
       },
       {
         id: 4,
-        url: IshuaRoom4,
+        url: "ishua_room_4.jpg",
         caption: '',
         alt: "ishua hotel"
       },
       {
         id: 5,
-        url: IshuaRoyalSuite1,
+        url: "ishua_royal_suite_1.jpg",
         caption: '',
         alt: "ishua hotel"
       },
       {
         id: 6,
-        url: IshuaRoyalSuite2,
+        url: "ishua_royal_suite_2.jpg",
         caption: '',
         alt: "ishua hotel"
       },
       {
         id: 7,
-        url: IshuaHotelCorridor,
+        url: "ishua_hotel_corridor.jpg",
         caption: '',
         alt: "ishua hotel"
       },
       {
         id: 8,
-        url: IshuaVip,
+        url: "ishua_vip.jpg",
         caption: '',
         alt: "ishua hotel"
       },
@@ -384,7 +364,7 @@ const branches = [
     images: [
       {
         id: 1,
-        url: Ugbeh,
+        url: "ugbeh_1.jpg",
         caption: '',
         alt: "ugbeh hotel"
       }
