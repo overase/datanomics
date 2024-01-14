@@ -6,6 +6,7 @@ import { ImageSlider } from "@/app/_components/ImageSlider/ImageSlider";
 import { HorizontalLines } from "@/app/_components/HorizontalLines/HorizontalLines";
 
 import { Map } from "@/app/_components/Map/Map";
+import { Each } from "@/app/_components/Each/Each";
 import style from './page.module.css';
 
 export async function generateMetadata({ params }, parent) {
@@ -49,27 +50,29 @@ export default function Page({ params: { slug } }) {
                   <div className={style.branch_room}>
                     <h3 className={`h3 ${style.available_room}`}>Available rooms</h3>
                     <ul className={style.branch_room_list}>
-                      {
-                        branch.rooms.map((room, index) => (
+                      <Each
+                        of={branch.rooms}
+                        render={(item, index) => (
                           <li className={style.branch_room_list_item} key={index}>
-                          <MdCircle className={style.fill} />
-                          <span>{room}</span>
-                        </li>
-                        ))
-                      }
+                            <MdCircle className={style.fill} />
+                            <span>{item}</span>
+                          </li>
+                        )}
+                      />
                     </ul>
                   </div>
                   <div className={style.branch_facility}>
                     <h3 className={`h4 ${style.facility_name}`}>Facilities</h3>
                     <ul className={style.branch_facility_list}>
-                      {
-                        branch.facilities.map((facility, index) => (
+                      <Each
+                        of={branch.facilities}
+                        render={(item, index) => (
                           <li className={style.branch_facility_list_item} key={index}>
-                            {facility.icon}
-                            <span>{facility.name}</span>
-                          </li>
-                        ))
-                      }
+                          {item.icon}
+                          <span>{item.name}</span>
+                        </li>
+                        )}
+                      />
                     </ul>
                   </div>
                 </div>

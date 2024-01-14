@@ -1,6 +1,7 @@
 import { HorizontalLines } from "../HorizontalLines/HorizontalLines";
 import { branches } from "@/app/branch/lib/branches";
 import { HotelCard } from "./HotelCard";
+import { Each } from "../Each/Each";
 import style from "./Hotels.module.css";
 
 const Hotels = () => {
@@ -10,7 +11,10 @@ const Hotels = () => {
       <HorizontalLines />
       <div className="container">
         <div className={style.hotel_content}>
-          {branches.slice(0, 4).map((branch, index) => (<HotelCard  branch={branch} key={index} />))}
+        <Each
+            of={branches.slice(0, 4)}
+            render={(item, index) => <HotelCard  branch={item} key={index} />}
+          />
         </div>
       </div>
     </section>
