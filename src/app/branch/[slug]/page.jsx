@@ -8,6 +8,7 @@ import { HorizontalLines } from "@/app/_components/HorizontalLines/HorizontalLin
 import { Map } from "@/app/_components/Map/Map";
 import { Each } from "@/app/_components/Each/Each";
 import style from './page.module.css';
+import { Facilities } from "../_components/Facilities/Facilities";
 
 export async function generateMetadata({ params }, parent) {
   const slug = params.slug
@@ -81,6 +82,7 @@ export default function Page({ params: { slug } }) {
           </div>
         </div>
       </section>
+      <Facilities />                
       <section className={style.map}>
         <Map
           position={branch.location}
