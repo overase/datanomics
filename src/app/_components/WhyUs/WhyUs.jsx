@@ -16,7 +16,7 @@ const WhyUs = () => {
     <div className="container">
       <div className={`${style.why_us}`}>
         <div className={`mb_4 ${style.why_us_header}`}>
-          <h1 className={`h1`}><span className="text-gold">WHY</span> <span className="text-secondary">US</span></h1>
+          <h2 className={`h2`}><span className="text-gold">WHY</span> <span className="text-secondary">US</span></h2>
           <HorizontalLines />
           <p className={style.why_us_text}>The reason our customers chooses us over competitors are not limited to these</p>
         </div>
