@@ -51,6 +51,11 @@ button {
   width: 100%;
 }
 
+.flex {
+  display: flex;
+  flex-basis: 100%;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;
