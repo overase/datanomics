@@ -1,12 +1,53 @@
+import { Each } from "@/app/_components/Each/Each";
 import style from "./Facilties.module.css";
 
-const Facilities = () => {
+const Facilities = ({ facilities }) => {
   return (
     <section className={style.page_section}>
       <div>
         <section className={style.facilities_box}>
-          <div>
+          <div className={style.content}>
+            <div className="header-content">
+              <div>
+                <h2 className="h2">
+                  <div className="h2-content">Facilities</div>
+                </h2>
+              </div>
+            </div>
             <div>
+            <div className={style.property_section}>
+              <div className={style.most_popular}>
+                <div>
+                  <div>
+                    <div className={style.most_popular_header}>
+                      <div className={style.most_popular_heading}>Most popular facilities</div>
+                    </div>
+                    <ul className={style.most_popular_list}>
+                    <Each
+                        of={facilities}
+                        render={(item, index) => (
+                          <li className={style.most_popular_list_item}>
+                            <div>
+                              <div className={style.most_popular_list_item_content}>
+                                <span className={style.facility_icon_container}>
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                                </span>
+                                <div>
+                                  <span>
+                                    <div className={style.font_2}>
+                                      <span>{item.name}</span>
+                                    </div>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        )}
+                      />
+                    </ul>
+                  </div>
+                </div>
+              </div>
               <div className={style.facilities_box_content}>
                 <div>
                   <div className={style.item}>
@@ -724,6 +765,7 @@ const Facilities = () => {
                             </div>
                           </div>
                         </div>
+                      </li>
                       <li className={style.facility_item}>
                         <div>
                           <div className={style.facility_item_content}>
@@ -756,11 +798,11 @@ const Facilities = () => {
                           </div>
                         </div>
                       </li>
-                      </li>
                     </ul>
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </section>
