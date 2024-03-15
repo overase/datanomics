@@ -4,7 +4,13 @@ import style from "./About.module.css";
 const About = () => {
   return (
     <section className={style.about}>
-      <h1 className={`h1`}>About</h1>
+      <div className="header-content">
+        <div className="flex justify-center">
+          <h2 className="h2">
+            <div className="h2-content">About</div>
+          </h2>
+        </div>
+      </div>
       <HorizontalLines />
       <div className="container">
         <p className={style.about_text}>

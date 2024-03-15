@@ -23,7 +23,6 @@ const WhyUs = () => {
               </h2>
             </div>
           </div>
-          {/* <h2 className={`h2`}><span className="text-gold">WHY</span> <span className="text-secondary">US</span></h2> */}
           <HorizontalLines />
           <p className={style.why_us_text}>The reason our customers chooses us over competitors are not limited to these</p>
         </div>
@@ -33,7 +32,9 @@ const WhyUs = () => {
               <PiCameraPlusLight size={30} className={style.light_icon} />
               <PiCameraPlusFill size={30}  className={style.fill_icon} />
             </div>
-            <h3 className="h3 mb_2 text-secondary">Security</h3>
+            <div className={style.most_popular_header}>
+              <div className={style.most_popular_heading}>Security</div>
+            </div>
             <p className={style.description}>
               All our hotels and guest houses are located very close to the security agencies
             </p>
@@ -43,7 +44,9 @@ const WhyUs = () => {
               <IoRestaurantOutline size={30} className={style.light_icon} />
               <IoRestaurant size={30}  className={style.fill_icon} />
             </div>
-            <h3 className="h3 mb_2 text-secondary">Restaurant</h3>
+            <div className={style.most_popular_header}>
+              <div className={style.most_popular_heading}>Restaurant</div>
+            </div>
             <p className={style.description}>
               Our restaurant serves African and continental dishes, in a clean and relaxing atmosphere.
             </p>
@@ -53,7 +56,9 @@ const WhyUs = () => {
               <BsLightbulb size={30} className={style.light_icon} />
               <BsLightbulbFill size={30} className={style.fill_icon} />
             </div>
-            <h3 className="h3 mb_2 text-secondary">Electricity</h3>
+            <div className={style.most_popular_header}>
+              <div className={style.most_popular_heading}>Electricity</div>
+            </div>
             <p className={style.description}>
               We are equiped with spohisticated generating set to continually make power available to our guest
             </p>

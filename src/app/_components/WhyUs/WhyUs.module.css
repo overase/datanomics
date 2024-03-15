@@ -66,6 +66,18 @@
   text-align: center;
 }
 
+.most_popular_header {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.most_popular_heading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 @media screen and (min-width: 768px) {
   .why_us_text {
     font-size: 2em;
