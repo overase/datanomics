@@ -6,7 +6,7 @@ import { Header } from './Header';
 
 function HeaderWrapper({ whiteBackground = false }) {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
+  // const searchParams = useSearchParams();
   const selectedSegments = useSelectedLayoutSegments();
   const [fixed, setFixed] = useState(false);
   const [open, setOpen] = useState(false);
@@ -35,7 +35,7 @@ function HeaderWrapper({ whiteBackground = false }) {
 
   useEffect(() => {
     setOpen(false);
-  }, [pathname, searchParams]);
+  }, [pathname]);
   return (
     <Header
       fixed={fixed}

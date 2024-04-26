@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FaChevronCircleLeft, FaChevronCircleRight } from "@/app/_ui/icons/icons";
 
 import style from './ImageSlider.module.css';
+import { Each } from "../Each/Each";
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -31,9 +32,12 @@ const ImageSlider = ({ slides }) => {
           <span className={style.slide_caption}>{slides[current].caption}</span>
       </div>
       <div className={style.slides_dot}>
-        {slides.map((_image, index) =>(
-          <div className={`${style.slide_dot} ${index === current && style.slide_dot_active}`} key={index} onClick={() => goToSlide(index)} />
-        ))}
+        <Each
+          of={slides}
+          render={(_item, index) => (
+            <div className={`${style.slide_dot} ${index === current && style.slide_dot_active}`} key={index} onClick={() => goToSlide(index)} />
+          )}
+        />
       </div>
     </div>
   );

@@ -21,6 +21,7 @@ function Header({ fixed, open, onToggle, whiteBackground }) {
           {open ? (
               <button
                 type="button"
+                aria-label="close menu"
                 className={`icon icon-white ${style.close}`}
                 onClick={onToggle}
               >
@@ -30,6 +31,7 @@ function Header({ fixed, open, onToggle, whiteBackground }) {
             (
               <button
                 type="button"
+                aria-label="open menu"
                 className={`icon icon-white ${style.menu}`}
                 onClick={onToggle}
               >

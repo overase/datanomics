@@ -51,6 +51,11 @@ button {
   width: 100%;
 }
 
+.flex {
+  display: flex;
+  flex-basis: 100%;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -81,12 +86,24 @@ h6 {
   font-weight: 700;
 }
 
+.header-content {
+  display: flex;
+  margin-bottom: 24px;
+}
+
 .h1 {
   font-size: 3.5em;
 }
 
 .h2 {
-  font-size: 3em;
+  font-size: 1.6rem;
+  color: #262626;
+}
+
+.h2-content {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
 }
 
 .h3 {
@@ -148,6 +165,10 @@ h6 {
   color: var(--white-color);
 }
 
+.block {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .flex-md-row {
     display: flex;
@@ -162,10 +183,6 @@ h6 {
 
   .h1 {
     font-size: 5.5em;
-  }
-  
-  .h2 {
-    font-size: 4.5em;
   }
   
   .h3 {

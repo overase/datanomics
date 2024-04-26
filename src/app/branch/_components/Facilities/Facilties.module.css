@@ -1,0 +1,140 @@
+.page_section {
+  margin: 0 0 8px;
+}
+
+.content {
+  display: flex;
+  pointer-events: none;
+  padding: 0;
+  list-style-type: none;
+  height: 100%;
+  flex-wrap: initial;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.facilities_box {
+  margin: 0 0 32px;
+}
+
+.most_popular {
+  margin-bottom: 16px;
+}
+
+.most_popular_header {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.most_popular_heading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.most_popular_list:last-child {
+  margin-block-end: 0;
+}
+
+.most_popular_list_item {
+  display: block;
+  margin-block-end: 8px;
+}
+
+.most_popular_list_item_content {
+  display: flex;
+  align-items: center;
+  margin: 0 12px 12px 0;
+}
+
+.item {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.facility_title_container {
+  margin-bottom: 4px;
+  display: flex;
+}
+
+.font_1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 24px;
+  color: #262626;
+}
+
+.font_2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 20px;
+  color: #262626;
+}
+
+.facility_label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.facility_icon_container {
+  margin-right: 12px;
+  height: calc(4px * 5);
+  display: inline-block;
+  fill: currentColor;
+  color: #262626;
+}
+
+.facility_icon_container svg {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  width: auto;
+}
+
+.facility_list_container {
+  list-style: none;
+  padding-inline-start: 0;
+  padding-inline-end: 16px;
+  margin: 0;
+}
+
+.facility_list_container:last-child {
+  margin-block-end: 0;
+}
+
+.facility_item {
+  margin-block-end: 8px;
+}
+
+.facility_item_content {
+  display: flex;
+  align-items: center;
+}
+
+.facility_item_title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 576px) {
+  .most_popular_list {
+    column-count: 2;
+    column-gap: 16px;
+  }
+
+  .facilities_box_content {
+    column-count: 2;
+    column-gap: 32px;
+  }
+}
+
+@media screen and (min-width: 969px) {
+  .facilities_box_content {
+    column-count: 3;
+  }
+
+  .most_popular_list {
+    column-count: 3;
+  }
+}
